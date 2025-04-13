@@ -78,5 +78,21 @@
         "roles": [
             {"movie_id": "2", "character": "Kochu Varkey's Friend"}
         ]
+    },
+    {
+        "id": "11",
+        "actor_name": "Aditi Balan",
+        "actor_image": "Aditi Balan.jpg",
+        "roles": [
+            {"movie_id": "2", "character": "Sreelakshmi"}
+        ]
+    },
+    {
+        "id": "12",
+        "actor_name": "Unni Mukundan",
+        "actor_image": "Unni Mukundan.jpg",
+        "roles": [
+            {"movie_id": "2", "character": "Marco"}
+        ]
     }
 ]
