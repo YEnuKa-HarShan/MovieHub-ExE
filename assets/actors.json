@@ -6,5 +6,45 @@
         "roles": [
             {"movie_id": "1", "character": "Marco"}
         ]
+    },
+    {
+        "id": "2",
+        "actor_name": "Aditi Balan",
+        "actor_image": "Aditi Balan.jpg",
+        "roles": [
+            {"movie_id": "1", "character": "Sreelakshmi"}
+        ]
+    },
+    {
+        "id": "3",
+        "actor_name": "Siddique",
+        "actor_image": "Siddique.jpg",
+        "roles": [
+            {"movie_id": "1", "character": "Venu"}
+        ]
+    },
+    {
+        "id": "4",
+        "actor_name": "Nedumudi Venu",
+        "actor_image": "Nedumudi Venu.jpg",
+        "roles": [
+            {"movie_id": "1", "character": "Kochu Varkey"}
+        ]
+    },
+    {
+        "id": "5",
+        "actor_name": "Suresh Krishna",
+        "actor_image": "Suresh Krishna.jpg",
+        "roles": [
+            {"movie_id": "1", "character": "Kochu Varkey's Friend"}
+        ]
+    },
+    {
+        "id": "6",
+        "actor_name": "Vijayaraghavan",
+        "actor_image": "Vijayaraghavan.jpg",
+        "roles": [
+            {"movie_id": "1", "character": "Kochu Varkey's Friend"}
+        ]
     }
 ]
