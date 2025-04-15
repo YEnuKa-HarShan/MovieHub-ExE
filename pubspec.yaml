@@ -71,6 +71,7 @@ flutter:
     - assets/actors.json
     - assets/users.json
     - assets/portrait/
+    - assets/actors/
     - assets/landscape/
     - assets/Icon.png
   # To add assets to your application, add an assets section, like this:
