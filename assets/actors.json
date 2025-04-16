@@ -110,43 +110,43 @@
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "13",
+        "actor_name": "Nayanthara",
+        "actor_image": "Nayanthara.jpg",
         "roles": [
             {"movie_id": "", "character": ""}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "14",
+        "actor_name": "Janhvi Kapoor",
+        "actor_image": "Janhvi Kapoor.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "8", "character": "Nisha Dixit"}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "15",
+        "actor_name": "Varun Dhawan",
+        "actor_image": "Varun Dhawan.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "8", "character": "Ajay Dixit"}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "16",
+        "actor_name": "Gal Gadot",
+        "actor_image": "Gal Gadot.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "2", "character": "Diana Prince"}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "17",
+        "actor_name": "Vidyut Jammwal",
+        "actor_image": "Vidyut Jammwal.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "3", "character": "Siddharth Dixit"}
         ]
     },
     {
