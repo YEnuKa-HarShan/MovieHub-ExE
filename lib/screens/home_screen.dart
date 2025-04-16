@@ -291,13 +291,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     children: [
                       _buildLanguageButton('English'),
-                      _buildLanguageButton('Tamil'),
-                      _buildLanguageButton('Hindi'),
-                      _buildLanguageButton('Malayalam'),
-                      _buildLanguageButton('Telugu'),
-                      _buildLanguageButton('Kannada'),
                       _buildLanguageButton('French'),
+                      _buildLanguageButton('Hindi'),
+                      _buildLanguageButton('Kannada'),
                       _buildLanguageButton('Korean'),
+                      _buildLanguageButton('Malayalam'),
+                      _buildLanguageButton('Tamil'),
+                      _buildLanguageButton('Telugu'),
                     ],
                   ),
                 ),
@@ -372,7 +372,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         controller: _scrollController,
                         padding: const EdgeInsets.all(12),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4,
+                          crossAxisCount: 5,
                           childAspectRatio: 2 / 3.8,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,

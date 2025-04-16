@@ -20,7 +20,7 @@
         "actor_name": "Shah Rukh Khan",
         "actor_image": "Shah Rukh Khan.jpg",
         "roles": [
-            {"movie_id": "", "character": ""},
+            {"movie_id": "10", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
@@ -34,7 +34,7 @@
         "actor_name": "Deepika Padukone",
         "actor_image": "Deepika Padukone.png",
         "roles": [
-            {"movie_id": "", "character": ""},
+            {"movie_id": "11", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},

@@ -16,9 +16,9 @@ void main() async {
   ].contains(defaultTargetPlatform)) {
     await windowManager.ensureInitialized();
     WindowOptions windowOptions = const WindowOptions(
-      size: Size(800, 600),
-      minimumSize: Size(800, 600),
-      maximumSize: Size(800, 600),
+      size: Size(900, 600),
+      minimumSize: Size(900, 600),
+      maximumSize: Size(900, 600),
       center: true,
       skipTaskbar: false,
     );
