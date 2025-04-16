@@ -21,8 +21,8 @@
         "actor_image": "Shah Rukh Khan.jpg",
         "roles": [
             {"movie_id": "9", "character": "Hardayal"},
-            {"movie_id": "", "character": ""},
-            {"movie_id": "", "character": ""},
+            {"movie_id": "16", "character": ""},
+            {"movie_id": "17", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
@@ -35,8 +35,8 @@
         "actor_image": "Deepika Padukone.png",
         "roles": [
             {"movie_id": "10", "character": "Minni"},
-            {"movie_id": "", "character": ""},
-            {"movie_id": "", "character": ""},
+            {"movie_id": "16", "character": ""},
+            {"movie_id": "17", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""}
         ]
@@ -114,7 +114,7 @@
         "actor_name": "Nayanthara",
         "actor_image": "Nayanthara.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "16", "character": ""}
         ]
     },
     {
