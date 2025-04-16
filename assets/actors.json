@@ -14,5 +14,645 @@
         "roles": [
             {"movie_id": "1", "character": "Maria"}
         ]
+    },
+    {
+        "id": "3",
+        "actor_name": "Shah Rukh Khan",
+        "actor_image": "Shah Rukh Khan.jpg",
+        "roles": [
+            {"movie_id": "384", "character": ""}
+        ]
+    },
+    {
+        "id": "4",
+        "actor_name": "Deepika Padukone",
+        "actor_image": "Deepika Padukone.jpg",
+        "roles": [
+            {"movie_id": "62", "character": ""}
+        ]
+    },
+    {
+        "id": "5",
+        "actor_name": "Akshay Kumar",
+        "actor_image": "Akshay Kumar.jpg",
+        "roles": [
+            {"movie_id": "10", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "id": "",
+        "actor_name": "",
+        "actor_image": ".jpg",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
     }
 ]
