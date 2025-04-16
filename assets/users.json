@@ -2,19 +2,13 @@
     {
       "email": "yenuka@moviehub.com",
       "password": "yenuka123",
-      "username": "YenukaUser",
+      "username": "Yenuka",
       "role": "User"
     },
     {
-      "email": "user@moviehub.com",
-      "password": "user123",
-      "username": "RegularUser",
-      "role": "User"
-    },
-    {
-      "email": "test@moviehub.com",
-      "password": "test123",
-      "username": "TestUser",
-      "role": "User"
+      "email": "admin@moviehub.com",
+      "password": "admin123",
+      "username": "Admin",
+      "role": "Admin"
     }
   ]

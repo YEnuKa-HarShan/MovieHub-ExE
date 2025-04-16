@@ -20,7 +20,7 @@
         "actor_name": "Shah Rukh Khan",
         "actor_image": "Shah Rukh Khan.jpg",
         "roles": [
-            {"movie_id": "9", "character": ""},
+            {"movie_id": "9", "character": "Hardayal"},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""},
@@ -100,11 +100,13 @@
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "12",
+        "actor_name": "Shia LaBeouf",
+        "actor_image": "Shia LaBeouf.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "4", "character": "Sam Witwicky"},
+            {"movie_id": "5", "character": "Sam Witwicky"},
+            {"movie_id": "6", "character": "Sam Witwicky"}
         ]
     },
     {
