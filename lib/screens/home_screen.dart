@@ -33,7 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
       final String response = await DefaultAssetBundle.of(context).loadString('assets/movies.json');
       final List<dynamic> data = json.decode(response);
       setState(() {
-        movies = data.map((json) => Movie.fromJson(json)).toList();
+        // Reverse the list to load movies from last to first
+        movies = data.map((json) => Movie.fromJson(json)).toList().reversed.toList();
+        // If you need to sort by id in descending order, use this instead:
+        // movies = data.map((json) => Movie.fromJson(json)).toList()
+        //     ..sort((a, b) => b.id.compareTo(a.id));
         filteredMovies = movies;
         print('Loaded ${movies.length} movies');
       });
