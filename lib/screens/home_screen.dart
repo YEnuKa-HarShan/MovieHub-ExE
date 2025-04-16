@@ -372,7 +372,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         controller: _scrollController,
                         padding: const EdgeInsets.all(12),
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 3,
+                          crossAxisCount: 4,
                           childAspectRatio: 2 / 3.8,
                           crossAxisSpacing: 12,
                           mainAxisSpacing: 12,
@@ -407,7 +407,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ],
                               ),
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
                                 children: [
                                   Expanded(
                                     child: Stack(
