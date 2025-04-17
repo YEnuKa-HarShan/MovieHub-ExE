@@ -216,63 +216,7 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
                         delegate: SliverChildBuilderDelegate(
                           (context, index) {
                             final movie = actorMovies[index];
-                            return GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => MovieDetailsScreen(movie: movie),
-                                  ),
-                                );
-                              },
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Expanded(
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
-                                      child: Image.asset(
-                                        'assets/portrait/${movie.portrait}',
-                                        fit: BoxFit.cover,
-                                        width: double.infinity,
-                                        errorBuilder: (context, error, stackTrace) {
-                                          return Container(
-                                            color: Colors.grey.shade800,
-                                            child: const Center(
-                                              child: Icon(
-                                                Icons.broken_image,
-                                                color: Colors.white70,
-                                                size: 40,
-                                              ),
-                                            ),
-                                          );
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  Text(
-                                    movie.title,
-                                    style: const TextStyle(
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                    ),
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                  ),
-                                  Text(
-                                    movie.year,
-                                    style: TextStyle(
-                                      fontFamily: 'Poppins',
-                                      color: Colors.white.withOpacity(0.7),
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            );
+                            return _MovieItem(movie: movie);
                           },
                           childCount: actorMovies.length,
                         ),
@@ -281,6 +225,123 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
                   ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// Widget for each movie item with hover effect
+class _MovieItem extends StatefulWidget {
+  final Movie movie;
+
+  const _MovieItem({required this.movie});
+
+  @override
+  _MovieItemState createState() => _MovieItemState();
+}
+
+class _MovieItemState extends State<_MovieItem> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MovieDetailsScreen(movie: widget.movie),
+          ),
+        );
+      },
+      child: MouseRegion(
+        onEnter: (_) {
+          setState(() {
+            _isHovered = true;
+          });
+        },
+        onExit: (_) {
+          setState(() {
+            _isHovered = false;
+          });
+        },
+        child: Stack(
+          children: [
+            // Movie Image
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                'assets/portrait/${widget.movie.portrait}',
+                fit: BoxFit.cover,
+                width: double.infinity,
+                height: double.infinity, // Take full height of the grid item
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    color: Colors.grey.shade800,
+                    child: const Center(
+                      child: Icon(
+                        Icons.broken_image,
+                        color: Colors.white70,
+                        size: 40,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+            // Sliding Container with Gradient and Title/Year
+            AnimatedPositioned(
+              duration: const Duration(milliseconds: 300),
+              curve: Curves.easeInOut,
+              left: 0,
+              right: 0,
+              bottom: _isHovered ? 0 : -100, // Slide up on hover
+              child: Container(
+                height: 100, // Height of the sliding container
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.black.withOpacity(0.7),
+                      const Color(0xFF00203F).withOpacity(0.8),
+                      const Color(0xFF0D3B66).withOpacity(0.8),
+                    ],
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                  ),
+                  borderRadius: const BorderRadius.only(
+                    bottomLeft: Radius.circular(8),
+                    bottomRight: Radius.circular(8),
+                  ),
+                ),
+                padding: const EdgeInsets.all(8),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      widget.movie.title,
+                      style: const TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 16,
+                      ),
+                      maxLines: 2,
+                    ),
+                    Text(
+                      widget.movie.year,
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        color: Colors.white.withOpacity(0.7),
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
