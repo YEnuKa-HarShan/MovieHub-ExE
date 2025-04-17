@@ -145,29 +145,31 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 const SizedBox(height: 24),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
                       onPressed: () {
                         Navigator.of(context).pop(); // Close dialog
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF00A8E8),
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                       ),
-                      child: const Text(
+                      child: Text(
                         'No, I don\'t want logout now',
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 14,
-                          color: Colors.white,
+                          color: Colors.white.withOpacity(0.7),
                           fontWeight: FontWeight.w600,
                         ),
                       ),
                     ),
+                    const SizedBox(width: 16), // Add spacing between buttons
                     ElevatedButton(
                       onPressed: () {
                         Navigator.of(context).pop(); // Close dialog
