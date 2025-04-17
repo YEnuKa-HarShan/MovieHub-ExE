@@ -12,20 +12,25 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   List<Movie> movies = [];
   List<Movie> filteredMovies = [];
-  bool isSearchVisible = false;
   String selectedLanguage = '';
-  String selectedMenuItem = 'Home';
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
+  String searchQuery = '';
 
   @override
   void initState() {
     super.initState();
     _scrollController.addListener(_onScroll);
     _loadMovies();
+    _searchController.addListener(() {
+      setState(() {
+        searchQuery = _searchController.text;
+        _filterMovies(searchQuery);
+      });
+    });
   }
 
   Future<void> _loadMovies() async {
@@ -33,11 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
       final String response = await DefaultAssetBundle.of(context).loadString('assets/movies.json');
       final List<dynamic> data = json.decode(response);
       setState(() {
-        // Reverse the list to load movies from last to first
         movies = data.map((json) => Movie.fromJson(json)).toList().reversed.toList();
-        // If you need to sort by id in descending order, use this instead:
-        // movies = data.map((json) => Movie.fromJson(json)).toList()
-        //     ..sort((a, b) => b.id.compareTo(a.id));
         filteredMovies = movies;
         print('Loaded ${movies.length} movies');
       });
@@ -111,238 +112,53 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           elevation: 4,
-          title: const Text(
-            'MovieHub',
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
-              fontSize: 24,
-              shadows: [Shadow(color: Colors.black26, blurRadius: 4)],
-            ),
-          ),
-          centerTitle: true,
-          leading: Builder(
-            builder: (context) => IconButton(
-              icon: const Icon(Icons.menu, color: Colors.white),
-              onPressed: () => Scaffold.of(context).openDrawer(),
-            ),
-          ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.search, color: Colors.white),
-              onPressed: () {
-                setState(() => isSearchVisible = !isSearchVisible);
-              },
-            ),
-          ],
-        ),
-        drawer: Drawer(
-          child: Stack(
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 4, sigmaY: 4),
-                child: Container(
-                  color: const Color(0xFF0A1A2F).withOpacity(0.5),
+              const Text(
+                'MovieHub',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 24,
+                  shadows: [Shadow(color: Colors.black26, blurRadius: 4)],
                 ),
               ),
-              Column(
-                children: [
-                  Container(
-                    height: 160,
-                    width: double.infinity,
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black26,
-                          blurRadius: 6,
-                          offset: Offset(0, 3),
-                        ),
-                      ],
-                    ),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Icon(
-                            Icons.movie_filter,
-                            color: Colors.white,
-                            size: 40,
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Discover Movies',
-                            style: TextStyle(
-                              fontFamily: 'Poppins',
-                              fontWeight: FontWeight.w700,
-                              color: Colors.white,
-                              fontSize: 22,
-                              shadows: [
-                                Shadow(
-                                  color: Colors.blueAccent.withOpacity(0.4),
-                                  blurRadius: 8,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
+              Transform.scale(
+                scale: 0.9,
+                child: SizedBox(
+                  width: 460,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(50),
+                      border: Border.all(
+                        color: Colors.white.withOpacity(0.2),
+                        width: 1,
                       ),
                     ),
-                  ),
-                  Expanded(
-                    child: ListView(
-                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                      children: [
-                        _buildMenuItem(
-                          icon: Icons.home,
-                          title: 'Home',
-                          isSelected: selectedMenuItem == 'Home',
-                          onTap: () {
-                            setState(() {
-                              selectedMenuItem = 'Home';
-                            });
-                            Navigator.pop(context);
-                          },
-                        ),
-                        _buildMenuItem(
-                          icon: Icons.person,
-                          title: 'Profile',
-                          isSelected: selectedMenuItem == 'Profile',
-                          onTap: () {
-                            setState(() {
-                              selectedMenuItem = 'Profile';
-                            });
-                            Navigator.pop(context);
-                          },
-                        ),
-                        _buildMenuItem(
-                          icon: Icons.settings,
-                          title: 'Settings',
-                          isSelected: selectedMenuItem == 'Settings',
-                          onTap: () {
-                            setState(() {
-                              selectedMenuItem = 'Settings';
-                            });
-                            Navigator.pop(context);
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: GestureDetector(
-                      onTap: _logout,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                          ),
-                          borderRadius: BorderRadius.circular(12),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withOpacity(0.3),
-                              blurRadius: 6,
-                              offset: const Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(Icons.logout, color: Color(0xFFFF4D4D), size: 20),
-                            const SizedBox(width: 8),
-                            Text(
-                              'Logout',
-                              style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.w600,
-                                color: const Color(0xFFFF4D4D),
-                                fontSize: 16,
-                              ),
-                            ),
-                          ],
-                        ),
+                    child: TextField(
+                      controller: _searchController,
+                      style: const TextStyle(
+                        fontFamily: 'Poppins',
+                        color: Colors.white,
+                        fontSize: 16,
                       ),
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-        body: RefreshIndicator(
-          onRefresh: _loadMovies,
-          child: Column(
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                color: Colors.black.withOpacity(0.3),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      _buildLanguageButton('English'),
-                      _buildLanguageButton('French'),
-                      _buildLanguageButton('Hindi'),
-                      _buildLanguageButton('Kannada'),
-                      _buildLanguageButton('Korean'),
-                      _buildLanguageButton('Malayalam'),
-                      _buildLanguageButton('Tamil'),
-                      _buildLanguageButton('Telugu'),
-                    ],
-                  ),
-                ),
-              ),
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 300),
-                child: isSearchVisible
-                    ? Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                            ),
-                            borderRadius: BorderRadius.circular(50),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.blueAccent.withOpacity(0.3),
-                                blurRadius: 10,
-                                spreadRadius: 2,
-                              ),
-                            ],
-                          ),
-                          child: TextField(
-                            controller: _searchController,
-                            style: const TextStyle(
-                              fontFamily: 'Poppins',
-                              color: Colors.white,
-                              fontSize: 16,
-                            ),
-                            decoration: InputDecoration(
-                              hintText: 'Search movies...',
-                              hintStyle: TextStyle(
-                                fontFamily: 'Poppins',
-                                color: Colors.white.withOpacity(0.7),
-                                fontSize: 16,
-                              ),
-                              prefixIcon: const Icon(
-                                Icons.search,
-                                color: Colors.white,
-                                size: 24,
-                              ),
-                              suffixIcon: IconButton(
+                      decoration: InputDecoration(
+                        hintText: 'Search movies...',
+                        hintStyle: TextStyle(
+                          fontFamily: 'Poppins',
+                          color: Colors.white.withOpacity(0.7),
+                          fontSize: 16,
+                        ),
+                        prefixIcon: const Icon(
+                          Icons.search,
+                          color: Colors.white,
+                          size: 24,
+                        ),
+                        suffixIcon: searchQuery.isNotEmpty
+                            ? IconButton(
                                 icon: const Icon(
                                   Icons.clear,
                                   color: Colors.white,
@@ -352,166 +168,96 @@ class _HomeScreenState extends State<HomeScreen> {
                                   _searchController.clear();
                                   _filterMovies('');
                                 },
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(50),
-                                borderSide: BorderSide.none,
-                              ),
-                              contentPadding: const EdgeInsets.symmetric(vertical: 14),
-                            ),
-                            onChanged: _filterMovies,
-                          ),
-                        ),
-                      )
-                    : const SizedBox.shrink(),
-              ),
-              Expanded(
-                child: movies.isEmpty
-                    ? const Center(child: CircularProgressIndicator())
-                    : GridView.builder(
-                        controller: _scrollController,
-                        padding: const EdgeInsets.all(12),
-                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 5,
-                          childAspectRatio: 2 / 3.8,
-                          crossAxisSpacing: 12,
-                          mainAxisSpacing: 12,
-                        ),
-                        itemCount: filteredMovies.length,
-                        itemBuilder: (context, index) {
-                          final movie = filteredMovies[index];
-                          return GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MovieDetailsScreen(movie: movie),
-                                ),
-                              );
-                            },
-                            child: AnimatedContainer(
-                              duration: const Duration(milliseconds: 200),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                gradient: LinearGradient(
-                                  colors: [Colors.blueGrey.shade900, Colors.black87],
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black.withOpacity(0.4),
-                                    blurRadius: 6,
-                                    offset: const Offset(0, 3),
-                                  ),
-                                ],
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.stretch,
-                                children: [
-                                  Expanded(
-                                    child: Stack(
-                                      children: [
-                                        ClipRRect(
-                                          borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
-                                          child: movie.portrait.isNotEmpty
-                                              ? Image.asset(
-                                                  'assets/portrait/${movie.portrait}',
-                                                  fit: BoxFit.cover,
-                                                  width: double.infinity,
-                                                  height: double.infinity,
-                                                  errorBuilder: (context, error, stackTrace) {
-                                                    return Container(
-                                                      color: Colors.grey.shade800,
-                                                      child: const Center(
-                                                        child: Icon(
-                                                          Icons.broken_image,
-                                                          color: Colors.white70,
-                                                          size: 40,
-                                                        ),
-                                                      ),
-                                                    );
-                                                  },
-                                                )
-                                              : Container(
-                                                  color: Colors.grey.shade800,
-                                                  child: const Center(
-                                                    child: Icon(
-                                                      Icons.image_not_supported,
-                                                      color: Colors.white70,
-                                                      size: 40,
-                                                    ),
-                                                  ),
-                                                ),
-                                        ),
-                                        Positioned(
-                                          top: 6,
-                                          right: 6,
-                                          child: Container(
-                                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-                                            decoration: BoxDecoration(
-                                              color: Colors.redAccent.withOpacity(0.9),
-                                              borderRadius: BorderRadius.circular(5),
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  color: Colors.red.withOpacity(0.5),
-                                                  blurRadius: 3,
-                                                ),
-                                              ],
-                                            ),
-                                            child: Text(
-                                              movie.language,
-                                              style: const TextStyle(
-                                                fontFamily: 'Poppins',
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.white,
-                                                fontSize: 10,
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        SizedBox(
-                                          height: 32,
-                                          child: Text(
-                                            movie.title,
-                                            style: const TextStyle(
-                                              fontFamily: 'Poppins',
-                                              fontWeight: FontWeight.w600,
-                                              color: Colors.white,
-                                              fontSize: 12,
-                                            ),
-                                            maxLines: 2,
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                        ),
-                                        Text(
-                                          movie.year,
-                                          style: TextStyle(
-                                            fontFamily: 'Poppins',
-                                            color: Colors.white.withOpacity(0.8),
-                                            fontSize: 10,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
-                        },
+                              )
+                            : null,
+                        border: InputBorder.none,
+                        contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 16),
                       ),
+                      onChanged: _filterMovies,
+                    ),
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: _logout,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(12),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: 6,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.logout, color: Color(0xFFFF4D4D), size: 20),
+                      const SizedBox(width: 4),
+                      Text(
+                        'Logout',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w600,
+                          color: const Color(0xFFFF4D4D),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
+          centerTitle: false,
+          automaticallyImplyLeading: false,
+        ),
+        body: Column(
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              color: Colors.black.withOpacity(0.3),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  _buildLanguageButton('English'),
+                  _buildLanguageButton('French'),
+                  _buildLanguageButton('Hindi'),
+                  _buildLanguageButton('Kannada'),
+                  _buildLanguageButton('Korean'),
+                  _buildLanguageButton('Malayalam'),
+                  _buildLanguageButton('Tamil'),
+                  _buildLanguageButton('Telugu'),
+                ],
+              ),
+            ),
+            Expanded(
+              child: movies.isEmpty
+                  ? const Center(child: CircularProgressIndicator())
+                  : GridView.builder(
+                      controller: _scrollController,
+                      padding: const EdgeInsets.all(12),
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 5,
+                        childAspectRatio: 2 / 3,
+                        crossAxisSpacing: 12,
+                        mainAxisSpacing: 12,
+                      ),
+                      itemCount: filteredMovies.length,
+                      itemBuilder: (context, index) {
+                        final movie = filteredMovies[index];
+                        return MovieCard(movie: movie, searchQuery: searchQuery);
+                      },
+                    ),
+            ),
+          ],
         ),
       ),
     );
@@ -519,13 +265,32 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildLanguageButton(String language) {
     bool isSelected = selectedLanguage == language;
+
+    // Calculate the text width using TextPainter
+    final textPainter = TextPainter(
+      text: TextSpan(
+        text: language,
+        style: TextStyle(
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.bold,
+          fontSize: 14,
+          color: isSelected ? Colors.white : Colors.white.withOpacity(0.8),
+        ),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+
+    // Add padding (12px horizontal) to the text width
+    final buttonWidth = textPainter.width + 24; // 12px left + 12px right
+
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 8),
       child: GestureDetector(
         onTap: () => _filterByLanguage(language),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          width: buttonWidth,
+          padding: const EdgeInsets.symmetric(vertical: 6),
           decoration: BoxDecoration(
             color: isSelected ? const Color(0xFF00A8E8) : Colors.white.withOpacity(0.1),
             borderRadius: BorderRadius.circular(20),
@@ -533,72 +298,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 ? [BoxShadow(color: Colors.blueAccent.withOpacity(0.3), blurRadius: 6)]
                 : null,
           ),
-          child: Text(
-            language,
-            style: TextStyle(
-              fontFamily: 'Poppins',
-              color: isSelected ? Colors.white : Colors.white.withOpacity(0.8),
-              fontWeight: FontWeight.bold,
-              fontSize: 14,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildMenuItem({
-    required IconData icon,
-    required String title,
-    required bool isSelected,
-    required VoidCallback onTap,
-  }) {
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        margin: const EdgeInsets.symmetric(vertical: 6),
-        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: isSelected
-                ? [const Color(0xFF00203F), const Color(0xFF0D3B66)]
-                : [
-                    Colors.blueGrey.shade900.withOpacity(0.2),
-                    Colors.black87.withOpacity(0.2),
-                  ],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
-            BoxShadow(
-              color: isSelected
-                  ? Colors.blueAccent.withOpacity(0.3)
-                  : Colors.black.withOpacity(0.2),
-              blurRadius: isSelected ? 6 : 4,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Row(
-          children: [
-            Icon(
-              icon,
-              color: isSelected ? const Color(0xFF00A8E8) : Colors.white.withOpacity(0.9),
-              size: 24,
-            ),
-            const SizedBox(width: 12),
-            Text(
-              title,
+          child: Center(
+            child: Text(
+              language,
               style: TextStyle(
                 fontFamily: 'Poppins',
-                color: isSelected ? const Color(0xFF00A8E8) : Colors.white.withOpacity(0.9),
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
+                color: isSelected ? Colors.white : Colors.white.withOpacity(0.8),
+                fontWeight: FontWeight.bold,
+                fontSize: 14,
               ),
+              overflow: TextOverflow.ellipsis,
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -609,5 +320,276 @@ class _HomeScreenState extends State<HomeScreen> {
     _searchController.dispose();
     _scrollController.dispose();
     super.dispose();
+  }
+}
+
+class MovieCard extends StatefulWidget {
+  final Movie movie;
+  final String searchQuery;
+
+  const MovieCard({super.key, required this.movie, required this.searchQuery});
+
+  @override
+  State<MovieCard> createState() => _MovieCardState();
+}
+
+class _MovieCardState extends State<MovieCard> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+  bool isFront = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _animation = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+    );
+  }
+
+  void _toggleCard() {
+    if (isFront) {
+      _controller.forward();
+    } else {
+      _controller.reverse();
+    }
+    setState(() {
+      isFront = !isFront;
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MouseRegion(
+      onEnter: (_) => _toggleCard(),
+      onExit: (_) => _toggleCard(),
+      child: AnimatedBuilder(
+        animation: _animation,
+        builder: (context, child) {
+          final angle = _animation.value * 3.14159;
+          final transform = Matrix4.identity()
+            ..setEntry(3, 2, 0.001)
+            ..rotateY(angle);
+          final isBack = _animation.value > 0.5;
+
+          return Transform(
+            transform: transform,
+            alignment: Alignment.center,
+            child: isBack
+                ? Transform(
+                    transform: Matrix4.identity()..rotateY(3.14159),
+                    alignment: Alignment.center,
+                    child: _buildBack(),
+                  )
+                : _buildFront(),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildFront() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.4),
+            blurRadius: 6,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: Stack(
+          children: [
+            widget.movie.portrait.isNotEmpty
+                ? Image.asset(
+                    'assets/portrait/${widget.movie.portrait}',
+                    fit: BoxFit.cover,
+                    width: double.infinity,
+                    height: double.infinity,
+                    errorBuilder: (context, error, stackTrace) {
+                      return Container(
+                        color: Colors.grey.shade800,
+                        child: const Center(
+                          child: Icon(
+                            Icons.broken_image,
+                            color: Colors.white70,
+                            size: 40,
+                          ),
+                        ),
+                      );
+                    },
+                  )
+                : Container(
+                    color: Colors.grey.shade800,
+                    child: const Center(
+                      child: Icon(
+                        Icons.image_not_supported,
+                        color: Colors.white70,
+                        size: 40,
+                      ),
+                    ),
+                  ),
+            Positioned(
+              top: 8,
+              right: 8,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.red.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  widget.movie.language,
+                  style: const TextStyle(
+                    fontFamily: 'Poppins',
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBack() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        gradient: const LinearGradient(
+          colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.4),
+            blurRadius: 6,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildHighlightedTitle(widget.movie.title, widget.searchQuery),
+            const SizedBox(height: 4),
+            Text(
+              widget.movie.year,
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                color: Colors.white.withOpacity(0.8),
+                fontSize: 12,
+              ),
+            ),
+            const Spacer(),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => MovieDetailsScreen(movie: widget.movie),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFF00A8E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                ),
+                child: const Text(
+                  'See More',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHighlightedTitle(String title, String query) {
+    if (query.isEmpty) {
+      return Text(
+        title,
+        style: const TextStyle(
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w600,
+          color: Colors.white,
+          fontSize: 14,
+        ),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      );
+    }
+
+    final lowerTitle = title.toLowerCase();
+    final lowerQuery = query.toLowerCase();
+    final spans = <TextSpan>[];
+
+    int start = 0;
+    while (start < title.length) {
+      final index = lowerTitle.indexOf(lowerQuery, start);
+      if (index == -1) {
+        spans.add(TextSpan(text: title.substring(start)));
+        break;
+      }
+      if (index > start) {
+        spans.add(TextSpan(text: title.substring(start, index)));
+      }
+      final end = index + query.length;
+      spans.add(
+        TextSpan(
+          text: title.substring(index, end),
+          style: const TextStyle(
+            color: Colors.yellowAccent,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      );
+      start = end;
+    }
+
+    return Text.rich(
+      TextSpan(
+        children: spans,
+        style: const TextStyle(
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.w600,
+          color: Colors.white,
+          fontSize: 14,
+        ),
+      ),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
+    );
   }
 }

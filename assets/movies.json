@@ -196,7 +196,7 @@
         "title": "Pathaan",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "Pathaan 2023.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -208,7 +208,7 @@
         "title": "Tiger 3",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "Tiger 3 2023.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -220,7 +220,7 @@
         "title": "Transformers Age of Extinction",
         "year": "2014",
         "language": "English",
-        "portrait": "",
+        "portrait": "Transformers 4 2014.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -232,7 +232,7 @@
         "title": "Tiger zinda hai",
         "year": "2017",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "Tiger Zinda Hai 2017.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -244,7 +244,7 @@
         "title": "Ek Tha Tiger",
         "year": "2012",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "Ek Tha Tiger 2012.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -256,7 +256,7 @@
         "title": "Thor Ragnarok",
         "year": "2017",
         "language": "English",
-        "portrait": "",
+        "portrait": "Thor Ragnarok 2017.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -268,7 +268,7 @@
         "title": "12th Fail",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "12th Fail 2023.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -280,7 +280,7 @@
         "title": "Bhool Bhulaiyaa 2",
         "year": "2022",
         "language": "Hindi",
-        "portrait": "",
+        "portrait": "Bhool Bhulaiyaa 2 2022.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -304,7 +304,7 @@
         "title": "Kung Fu Panda 4",
         "year": "2024",
         "language": "English",
-        "portrait": "",
+        "portrait": "Kung Fu Panda 4 2024.jpg",
         "landscape": "",
         "genre": ["Animation"],
         "description": [""],
@@ -316,7 +316,7 @@
         "title": "Kaithi",
         "year": "2019",
         "language": "Tamil",
-        "portrait": "",
+        "portrait": "Kaithi 2019.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -364,7 +364,7 @@
         "title": "Sonic the Hedgehog 2",
         "year": "2022",
         "language": "",
-        "portrait": "",
+        "portrait": "Sonic the Hedgehog 2 2022.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -385,8 +385,8 @@
     },
     {
         "id": "33",
-        "title": "",
-        "year": "",
+        "title": "Mission Chapter 1",
+        "year": "2024",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -397,8 +397,8 @@
     },
     {
         "id": "34",
-        "title": "",
-        "year": "",
+        "title": "Bodyguard",
+        "year": "2011",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -409,8 +409,8 @@
     },
     {
         "id": "35",
-        "title": "",
-        "year": "",
+        "title": "Beast",
+        "year": "2022",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -421,7 +421,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Theeran Adhigaaram ondru 2017",
         "year": "",
         "language": "",
         "portrait": "",
@@ -433,7 +433,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "777 charlie 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -445,7 +445,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Hotel transylvania 2012",
         "year": "",
         "language": "",
         "portrait": "",
@@ -457,7 +457,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": " Pacific rim 2013",
         "year": "",
         "language": "",
         "portrait": "",
@@ -469,7 +469,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Bloody daddy 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -481,7 +481,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Brahmastra part 1 shiva 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -493,7 +493,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Dhadak 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -505,7 +505,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Mission raniganj 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -517,7 +517,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Sathya prem ki katha 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -529,7 +529,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Singh is bliing 2015",
         "year": "",
         "language": "",
         "portrait": "",
@@ -541,7 +541,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Pranaya vilasam 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -553,7 +553,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "King of kotha 2024",
         "year": "",
         "language": "",
         "portrait": "",
@@ -565,7 +565,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Aavesham 2024",
         "year": "",
         "language": "",
         "portrait": "",
@@ -577,7 +577,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "K. G. F. Chapter 2 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -589,7 +589,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Anjaan 2014",
         "year": "",
         "language": "",
         "portrait": "",
@@ -601,7 +601,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Captain miller 2024",
         "year": "",
         "language": "",
         "portrait": "",
@@ -613,7 +613,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Siren 2024",
         "year": "",
         "language": "",
         "portrait": "",
@@ -625,7 +625,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Baahubali 2 The Conclusion 2017",
         "year": "",
         "language": "",
         "portrait": "",
@@ -637,7 +637,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Bhool Bhulaiyaa 2007",
         "year": "",
         "language": "",
         "portrait": "",
@@ -649,7 +649,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Ek villain 2014",
         "year": "",
         "language": "",
         "portrait": "",
@@ -661,7 +661,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Holiday 2014",
         "year": "",
         "language": "",
         "portrait": "",
@@ -673,7 +673,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Ram setu 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -685,7 +685,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Rowdy rathore 2012",
         "year": "",
         "language": "",
         "portrait": "",
@@ -697,7 +697,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Fear street part 1 1994 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -709,7 +709,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Fear street part 3 1966 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -721,7 +721,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Fear street part 2 1978 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -733,7 +733,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Dune part 1 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -745,7 +745,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Sonic the hedgehog 2020",
         "year": "",
         "language": "",
         "portrait": "",
@@ -757,7 +757,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Chennai express 2013",
         "year": "",
         "language": "",
         "portrait": "",
@@ -769,7 +769,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Kung fu panda 2008",
         "year": "",
         "language": "",
         "portrait": "",
@@ -781,7 +781,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "13 hours the secret soldiers of benghazi 2016",
         "year": "",
         "language": "",
         "portrait": "",
@@ -793,7 +793,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Lamborghini the man behind the legend 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -805,7 +805,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Bangalore days 2014",
         "year": "",
         "language": "",
         "portrait": "",
@@ -817,7 +817,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Ohm shanthi oshaana 2014",
         "year": "",
         "language": "",
         "portrait": "",
@@ -829,7 +829,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Heropanti 2 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -841,7 +841,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Garam masala 2005",
         "year": "",
         "language": "",
         "portrait": "",
@@ -853,7 +853,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Mersal 2017",
         "year": "",
         "language": "",
         "portrait": "",
@@ -865,7 +865,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Vikram 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -877,7 +877,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Hotel Transylvania 2 2015",
         "year": "",
         "language": "",
         "portrait": "",
@@ -889,7 +889,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Hotel transylvania 3 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -901,7 +901,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Kung fu panda 2 2011",
         "year": "",
         "language": "",
         "portrait": "",
@@ -913,7 +913,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Kung fu panda 3 2016",
         "year": "",
         "language": "",
         "portrait": "",
@@ -925,7 +925,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Red notice 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -937,7 +937,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "The gray man 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -949,7 +949,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "The predator 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -961,7 +961,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Twilight 2008",
         "year": "",
         "language": "",
         "portrait": "",
@@ -973,7 +973,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Asterix & Obelix the middle kingdom 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -985,7 +985,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Agneepath 2012",
         "year": "",
         "language": "",
         "portrait": "",
@@ -997,7 +997,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Bhoot police 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1009,7 +1009,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Boss 2013",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1021,7 +1021,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Dilwale 2015",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1033,7 +1033,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Jolly llb 2 2017",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1045,7 +1045,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Shehzada 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1057,7 +1057,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Adanga maru 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1069,7 +1069,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Hey sinamika 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1081,7 +1081,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Jagame thandiram 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1093,7 +1093,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "My name is khan 2010",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1105,7 +1105,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "The game 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1117,7 +1117,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Sapta sagaradaache ello - side a 2023",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1129,7 +1129,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Final destination 3 2006",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1141,7 +1141,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Final destination 2000",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1153,7 +1153,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Final destination 5 2011",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1165,7 +1165,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Final destination 2 2003",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1177,7 +1177,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Harry potter and the prisoner of azkaban 2004",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1189,7 +1189,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Harry potter and the philosophers stone 2001",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1201,7 +1201,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Harry potter and the chamber of secrets 2002",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1213,7 +1213,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Charlie 2015",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1225,7 +1225,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Forensic 2020",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1237,7 +1237,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Theevram 2016",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1249,7 +1249,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Aarudhra 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1261,7 +1261,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Easwaran 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1273,7 +1273,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Mafia chapter 1 2020",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1285,7 +1285,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Pattathu arasan 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1297,7 +1297,7 @@
     },
     {
         "id": "",
-        "title": "",
+        "title": "Seethamma vakitlo sirimalle chettu 2013",
         "year": "",
         "language": "",
         "portrait": "",
