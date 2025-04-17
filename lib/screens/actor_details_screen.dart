@@ -206,6 +206,13 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
                         );
                       }
 
+                      // Sort movies by year (present to old)
+                      actorMovies.sort((a, b) {
+                        final yearA = int.tryParse(a.year) ?? 0;
+                        final yearB = int.tryParse(b.year) ?? 0;
+                        return yearB.compareTo(yearA); // Descending order (present to old)
+                      });
+
                       return SliverGrid(
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 4, // 4 columns
