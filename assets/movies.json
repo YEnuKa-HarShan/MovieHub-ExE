@@ -97,7 +97,7 @@
     },
     {
         "id": "9",
-        "title": "Dunki 2023",
+        "title": "Dunki",
         "year": "2023",
         "language": "Hindi",
         "portrait": "Dunki 2023.jpg",
@@ -109,7 +109,7 @@
     },
     {
         "id": "10",
-        "title": "Fighter 2024",
+        "title": "Fighter",
         "year": "2024",
         "language": "Hindi",
         "portrait": "Fighter 2024.jpg",
@@ -129,7 +129,7 @@
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Ajay Devgn", "Tabu"]
     },
     {
         "id": "12",
@@ -141,7 +141,7 @@
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Ajay Devgn", "Ileana D'Cruz"]
     },
     {
         "id": "13",

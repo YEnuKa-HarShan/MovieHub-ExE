@@ -150,11 +150,11 @@
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "18",
+        "actor_name": "Ajay Devgn",
+        "actor_image": "Ajay Devgn.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "11", "character": ""}
         ]
     },
     {
