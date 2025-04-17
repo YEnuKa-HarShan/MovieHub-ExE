@@ -261,7 +261,7 @@
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": ["Chris Hemsworth"]
+        "cast": ["Chris Hemsworth", "Tom Hiddleston"]
     },
     {
         "id": "23",
@@ -273,7 +273,7 @@
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Vikrant Massey"]
     },
     {
         "id": "24",
@@ -285,7 +285,7 @@
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Kartik Aaryan"]
     },
     {
         "id": "25",
@@ -577,10 +577,10 @@
     },
     {
         "id": "",
-        "title": "K. G. F. Chapter 2 2022",
-        "year": "",
+        "title": "K. G. F. Chapter 2",
+        "year": "2022",
         "language": "",
-        "portrait": "",
+        "portrait": "K. G. F. Chapter 2 2022.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -684,16 +684,16 @@
         "cast": [""]
     },
     {
-        "id": "",
+        "id": "58",
         "title": "Rowdy rathore 2012",
-        "year": "",
+        "year": "2012",
         "language": "",
         "portrait": "",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Akshay Kumar"]
     },
     {
         "id": "",
@@ -745,10 +745,10 @@
     },
     {
         "id": "",
-        "title": "Sonic the hedgehog 2020",
-        "year": "",
+        "title": "Sonic the hedgehog",
+        "year": "2020",
         "language": "",
-        "portrait": "",
+        "portrait": "Sonic the Hedgehog 2020.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
@@ -756,16 +756,16 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Chennai express 2013",
-        "year": "",
+        "id": "64",
+        "title": "Chennai express",
+        "year": "2013",
         "language": "",
-        "portrait": "",
+        "portrait": "Chennai Express 2013.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Shah Rukh Khan", "Deepika Padukone"]
     },
     {
         "id": "",
@@ -889,7 +889,7 @@
     },
     {
         "id": "",
-        "title": "Hotel transylvania 3 2018",
+        "title": "Hotel Transylvania 3 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -901,7 +901,7 @@
     },
     {
         "id": "",
-        "title": "Kung fu panda 2 2011",
+        "title": "Kung Fu Panda 2 2011",
         "year": "",
         "language": "",
         "portrait": "",
@@ -913,7 +913,7 @@
     },
     {
         "id": "",
-        "title": "Kung fu panda 3 2016",
+        "title": "Kung Fu Panda 3 2016",
         "year": "",
         "language": "",
         "portrait": "",
@@ -925,7 +925,7 @@
     },
     {
         "id": "",
-        "title": "Red notice 2021",
+        "title": "Red Notice 2021",
         "year": "",
         "language": "",
         "portrait": "",
@@ -937,7 +937,7 @@
     },
     {
         "id": "",
-        "title": "The gray man 2022",
+        "title": "The Gray Man 2022",
         "year": "",
         "language": "",
         "portrait": "",
@@ -949,7 +949,7 @@
     },
     {
         "id": "",
-        "title": "The predator 2018",
+        "title": "The Predator 2018",
         "year": "",
         "language": "",
         "portrait": "",
@@ -1008,52 +1008,52 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Boss 2013",
-        "year": "",
+        "id": "85",
+        "title": "Boss",
+        "year": "2013",
         "language": "",
         "portrait": "",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Akshay Kumar"]
     },
     {
-        "id": "",
-        "title": "Dilwale 2015",
-        "year": "",
+        "id": "86",
+        "title": "Dilwale",
+        "year": "2015",
         "language": "",
-        "portrait": "",
+        "portrait": "Dilwale 2015.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Shah Rukh Khan", "Kajol"]
     },
     {
-        "id": "",
-        "title": "Jolly llb 2 2017",
-        "year": "",
+        "id": "87",
+        "title": "Jolly LLB 2",
+        "year": "2017",
         "language": "",
         "portrait": "",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Akshay Kumar"]
     },
     {
-        "id": "",
-        "title": "Shehzada 2023",
-        "year": "",
+        "id": "88",
+        "title": "Shehzada",
+        "year": "2023",
         "language": "",
-        "portrait": "",
+        "portrait": "Shehzada 2023.jpg",
         "landscape": "",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
-        "cast": [""]
+        "cast": ["Kartik Aaryan"]
     },
     {
         "id": "",

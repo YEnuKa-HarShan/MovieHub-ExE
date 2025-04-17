@@ -23,8 +23,8 @@
             {"movie_id": "9", "character": "Hardayal"},
             {"movie_id": "16", "character": ""},
             {"movie_id": "17", "character": ""},
-            {"movie_id": "", "character": ""},
-            {"movie_id": "", "character": ""},
+            {"movie_id": "86", "character": ""},
+            {"movie_id": "64", "character": ""},
             {"movie_id": "", "character": ""},
             {"movie_id": "", "character": ""}
         ]
@@ -37,7 +37,7 @@
             {"movie_id": "10", "character": "Minni"},
             {"movie_id": "16", "character": ""},
             {"movie_id": "17", "character": ""},
-            {"movie_id": "", "character": ""},
+            {"movie_id": "64", "character": ""},
             {"movie_id": "", "character": ""}
         ]
     },
@@ -46,8 +46,9 @@
         "actor_name": "Akshay Kumar",
         "actor_image": "Akshay Kumar.jpg",
         "roles": [
-            {"movie_id": "", "character": ""},
-            {"movie_id": "", "character": ""}
+            {"movie_id": "85", "character": ""},
+            {"movie_id": "58", "character": ""},
+            {"movie_id": "87", "character": "Jagdish Mishra"}
         ]
     },
     {
@@ -158,11 +159,11 @@
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "19",
+        "actor_name": "Kartik Aaryan",
+        "actor_image": "Kartik Aaryan.jpg",
         "roles": [
-            {"movie_id": "", "character": ""}
+            {"movie_id": "88", "character": ""}
         ]
     },
     {
