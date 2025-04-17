@@ -4,6 +4,7 @@ import '../models/movie.dart';
 import 'movie_details_screen.dart';
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -39,8 +40,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       final List<dynamic> data = json.decode(response);
       setState(() {
         movies = data.map((json) => Movie.fromJson(json)).toList().reversed.toList();
-        filteredMovies = movies;
-        print('Loaded ${movies.length} movies');
+        _filterMovies(''); // Initial filter to apply portrait check
       });
     } catch (e) {
       if (mounted) {
@@ -60,7 +60,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       filteredMovies = movies
           .where((movie) =>
               movie.title.toLowerCase().contains(query.toLowerCase()) &&
-              (selectedLanguage.isEmpty || movie.language == selectedLanguage))
+              (selectedLanguage.isEmpty || movie.language == selectedLanguage) &&
+              movie.portrait.isNotEmpty) // Add condition to exclude empty portrait
           .toList();
     });
   }
@@ -241,21 +242,82 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             Expanded(
               child: movies.isEmpty
                   ? const Center(child: CircularProgressIndicator())
-                  : GridView.builder(
-                      controller: _scrollController,
-                      padding: const EdgeInsets.all(12),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 5,
-                        childAspectRatio: 2 / 3,
-                        crossAxisSpacing: 12,
-                        mainAxisSpacing: 12,
-                      ),
-                      itemCount: filteredMovies.length,
-                      itemBuilder: (context, index) {
-                        final movie = filteredMovies[index];
-                        return MovieCard(movie: movie, searchQuery: searchQuery);
-                      },
-                    ),
+                  : filteredMovies.isEmpty && searchQuery.isNotEmpty
+                      ? Center(
+                          child: Container(
+                            padding: const EdgeInsets.all(24),
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
+                              ),
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.white.withOpacity(0.1),
+                                  blurRadius: 10,
+                                  spreadRadius: 2,
+                                ),
+                              ],
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    SpinKitDoubleBounce(
+                                      color: Colors.white.withOpacity(0.3),
+                                      size: 100,
+                                    ),
+                                    const Icon(
+                                      Icons.search_off,
+                                      size: 60,
+                                      color: Colors.white70,
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(height: 20),
+                                Text(
+                                  'No movies match your search: "$searchQuery"',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white.withOpacity(0.9),
+                                  ),
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  'Try a different title or language!',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 14,
+                                    color: Colors.white.withOpacity(0.6),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+                      : GridView.builder(
+                          controller: _scrollController,
+                          padding: const EdgeInsets.all(12),
+                          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 5,
+                            childAspectRatio: 2 / 3,
+                            crossAxisSpacing: 12,
+                            mainAxisSpacing: 12,
+                          ),
+                          itemCount: filteredMovies.length,
+                          itemBuilder: (context, index) {
+                            final movie = filteredMovies[index];
+                            return MovieCard(movie: movie, searchQuery: searchQuery);
+                          },
+                        ),
             ),
           ],
         ),
