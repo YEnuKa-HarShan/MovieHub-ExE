@@ -119,25 +119,25 @@
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "20",
+        "actor_name": "Yash",
+        "actor_image": "Yash.jpg",
         "roles": [
             {"movie_id": "", "character": ""}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "21",
+        "actor_name": "Srinidhi Shetty",
+        "actor_image": "Srinidhi Shetty.jpg",
         "roles": [
             {"movie_id": "", "character": ""}
         ]
     },
     {
-        "id": "",
-        "actor_name": "",
-        "actor_image": ".jpg",
+        "id": "22",
+        "actor_name": "Sanjay Dutt",
+        "actor_image": "Sanjay Dutt.jpg",
         "roles": [
             {"movie_id": "", "character": ""}
         ]
