@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  final String searchQuery;
+
+  const HomePage({super.key, this.searchQuery = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,9 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Home Page Under Maintenance',
+              searchQuery.isEmpty
+                  ? 'Home Page Under Maintenance'
+                  : 'Search Not Available',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 24,
@@ -34,7 +38,9 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              'We are working on bringing you the best experience!',
+              searchQuery.isEmpty
+                  ? 'We are working on bringing you the best experience!'
+                  : 'Search functionality is unavailable during maintenance.',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 16,

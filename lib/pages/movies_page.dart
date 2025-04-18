@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:moviehub_exe/models/movie.dart'; // Adjust path if needed
 import 'package:moviehub_exe/screens/movie_details_screen.dart'; // Adjust path if needed
+import 'package:moviehub_exe/widgets/no_results_widget.dart'; // Import the new widget
 import 'dart:convert';
+// ignore: unused_import
 import 'package:shared_preferences/shared_preferences.dart';
+// ignore: unused_import
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class MoviesPage extends StatefulWidget {
   final VoidCallback onLogoutTap; // Callback for logout action
-  const MoviesPage({super.key, required this.onLogoutTap});
+  final String searchQuery;
+
+  const MoviesPage({super.key, required this.onLogoutTap, this.searchQuery = ''});
 
   @override
   State<MoviesPage> createState() => _MoviesPageState();
@@ -18,9 +23,7 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
   List<Movie> movies = [];
   List<Movie> filteredMovies = [];
   String selectedLanguage = '';
-  final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
-  String searchQuery = '';
   Map<String, String> movieImageMap = {}; // Map to store title-to-portrait mappings
 
   @override
@@ -28,12 +31,14 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
     super.initState();
     _scrollController.addListener(_onScroll);
     _loadMovies();
-    _searchController.addListener(() {
-      setState(() {
-        searchQuery = _searchController.text;
-        _filterMovies(searchQuery);
-      });
-    });
+  }
+
+  @override
+  void didUpdateWidget(covariant MoviesPage oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.searchQuery != oldWidget.searchQuery) {
+      _filterMovies(widget.searchQuery);
+    }
   }
 
   Future<void> _loadMovies() async {
@@ -53,7 +58,7 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
 
       setState(() {
         movies = moviesData.map((json) => Movie.fromJson(json)).toList().reversed.toList();
-        _filterMovies(''); // Initial filter to apply portrait check
+        _filterMovies(widget.searchQuery); // Initial filter with searchQuery
       });
     } catch (e) {
       if (mounted) {
@@ -82,7 +87,7 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
   void _filterByLanguage(String language) {
     setState(() {
       selectedLanguage = (selectedLanguage == language) ? '' : language;
-      _filterMovies(_searchController.text);
+      _filterMovies(widget.searchQuery);
     });
   }
 
@@ -90,29 +95,11 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
     if (selectedLanguage.isNotEmpty) {
       setState(() {
         selectedLanguage = '';
-        _filterMovies(_searchController.text);
+        _filterMovies(widget.searchQuery);
       });
       return false;
     }
     return true;
-  }
-
-  // ignore: unused_element
-  Future<void> _logout() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('isLoggedIn', false);
-    if (mounted) {
-      Navigator.pushNamedAndRemoveUntil(
-        context,
-        '/login',
-        (Route<dynamic> route) => false,
-      );
-    }
-  }
-
-  // ignore: unused_element
-  void _showLogoutDialog() {
-    widget.onLogoutTap(); // Use the passed callback
   }
 
   @override
@@ -143,67 +130,8 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
             Expanded(
               child: movies.isEmpty
                   ? const Center(child: CircularProgressIndicator())
-                  : filteredMovies.isEmpty && searchQuery.isNotEmpty
-                      ? Center(
-                          child: Container(
-                            padding: const EdgeInsets.all(24),
-                            decoration: BoxDecoration(
-                              gradient: const LinearGradient(
-                                colors: [Color(0xFF00203F), Color(0xFF0D3B66)],
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                              ),
-                              borderRadius: BorderRadius.circular(20),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.white.withOpacity(0.1),
-                                  blurRadius: 10,
-                                  spreadRadius: 2,
-                                ),
-                              ],
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Stack(
-                                  alignment: Alignment.center,
-                                  children: [
-                                    SpinKitDoubleBounce(
-                                      color: Colors.white.withOpacity(0.3),
-                                      size: 100,
-                                    ),
-                                    const Icon(
-                                      Icons.search_off,
-                                      size: 60,
-                                      color: Colors.white70,
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(height: 20),
-                                Text(
-                                  'No movies match your search: "$searchQuery"',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontFamily: 'Poppins',
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white.withOpacity(0.9),
-                                  ),
-                                ),
-                                const SizedBox(height: 10),
-                                Text(
-                                  'Try a different title or language!',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontFamily: 'Poppins',
-                                    fontSize: 14,
-                                    color: Colors.white.withOpacity(0.6),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )
+                  : filteredMovies.isEmpty && widget.searchQuery.isNotEmpty
+                      ? NoResultsWidget(searchQuery: widget.searchQuery) // Use the new widget
                       : GridView.builder(
                           controller: _scrollController,
                           padding: const EdgeInsets.all(12),
@@ -218,8 +146,8 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
                             final movie = filteredMovies[index];
                             return MovieCard(
                               movie: movie,
-                              searchQuery: searchQuery,
-                              movieImageMap: movieImageMap, // Pass the image map
+                              searchQuery: widget.searchQuery,
+                              movieImageMap: movieImageMap,
                             );
                           },
                         ),
@@ -233,7 +161,6 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
   Widget _buildLanguageButton(String language) {
     bool isSelected = selectedLanguage == language;
 
-    // Calculate the text width using TextPainter
     final textPainter = TextPainter(
       text: TextSpan(
         text: language,
@@ -247,8 +174,7 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
       textDirection: TextDirection.ltr,
     )..layout();
 
-    // Add padding (12px horizontal) to the text width
-    final buttonWidth = textPainter.width + 24; // 12px left + 12px right
+    final buttonWidth = textPainter.width + 24;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -284,7 +210,6 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
 
   @override
   void dispose() {
-    _searchController.dispose();
     _scrollController.dispose();
     super.dispose();
   }
@@ -293,7 +218,7 @@ class _MoviesPageState extends State<MoviesPage> with TickerProviderStateMixin {
 class MovieCard extends StatefulWidget {
   final Movie movie;
   final String searchQuery;
-  final Map<String, String> movieImageMap; // Add image map
+  final Map<String, String> movieImageMap;
 
   const MovieCard({
     super.key,
@@ -371,7 +296,6 @@ class _MovieCardState extends State<MovieCard> with SingleTickerProviderStateMix
   }
 
   Widget _buildFront() {
-    // Get portrait image from movieImageMap, fallback to movie.portrait
     final portraitImage = widget.movieImageMap[widget.movie.title] ?? widget.movie.portrait;
 
     return Container(

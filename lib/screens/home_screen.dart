@@ -13,13 +13,44 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0; // 0: Home, 1: Movies, 2: TV Series
+  String _searchQuery = ''; // Store the current search query
+  late TextEditingController _searchController; // Controller for search bar
 
   // List of pages to render based on selected index
-  final List<Widget> _pages = [
-    const HomePage(),
-    MoviesPage(onLogoutTap: () {}), // Will update onLogoutTap later
-    const TvSeriesPage(),
-  ];
+  late List<Widget> _pages;
+
+  @override
+  void initState() {
+    super.initState();
+    _searchController = TextEditingController();
+    // Initialize pages with searchQuery
+    _updatePages();
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  // Update pages with the current search query
+  void _updatePages() {
+    _pages = [
+      HomePage(searchQuery: _searchQuery),
+      MoviesPage(onLogoutTap: () {}, searchQuery: _searchQuery),
+      TvSeriesPage(searchQuery: _searchQuery),
+    ];
+  }
+
+  // Handle navigation item selection and reset search
+  void _onNavItemSelected(int index) {
+    setState(() {
+      _selectedIndex = index;
+      _searchQuery = ''; // Reset search query
+      _searchController.clear(); // Clear search bar text
+      _updatePages(); // Update pages with empty search query
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -184,11 +215,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           TextButton(
-                            onPressed: () {
-                              setState(() {
-                                _selectedIndex = 0; // Switch to Home
-                              });
-                            },
+                            onPressed: () => _onNavItemSelected(0),
                             child: Text(
                               'Home',
                               style: TextStyle(
@@ -214,11 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           TextButton(
-                            onPressed: () {
-                              setState(() {
-                                _selectedIndex = 1; // Switch to Movies
-                              });
-                            },
+                            onPressed: () => _onNavItemSelected(1),
                             child: Text(
                               'Movies',
                               style: TextStyle(
@@ -244,11 +267,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           TextButton(
-                            onPressed: () {
-                              setState(() {
-                                _selectedIndex = 2; // Switch to TV Series
-                              });
-                            },
+                            onPressed: () => _onNavItemSelected(2),
                             child: Text(
                               'TV Series',
                               style: TextStyle(
@@ -288,7 +307,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     child: TextField(
-                      controller: TextEditingController(),
+                      controller: _searchController,
                       style: const TextStyle(
                         fontFamily: 'Poppins',
                         color: Colors.white,
@@ -310,7 +329,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 12),
                       ),
                       onChanged: (value) {
-                        // Handled by MoviesPage or other pages if needed
+                        setState(() {
+                          _searchQuery = value;
+                          _updatePages(); // Update pages with new search query
+                        });
                       },
                     ),
                   ),

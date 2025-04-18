@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class TvSeriesPage extends StatelessWidget {
-  const TvSeriesPage({super.key});
+  final String searchQuery;
+
+  const TvSeriesPage({super.key, this.searchQuery = ''});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,9 @@ class TvSeriesPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'TV Series Page Under Maintenance',
+              searchQuery.isEmpty
+                  ? 'TV Series Page Under Maintenance'
+                  : 'Search Not Available',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 24,
@@ -34,7 +38,9 @@ class TvSeriesPage extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              'We are working on bringing you the best experience!',
+              searchQuery.isEmpty
+                  ? 'We are working on bringing you the best experience!'
+                  : 'Search functionality is unavailable during maintenance.',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 16,
