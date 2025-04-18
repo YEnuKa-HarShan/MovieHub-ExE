@@ -14,8 +14,6 @@
         "title": "Wonder Woman 1984",
         "year": "2020",
         "language": "English",
-        "portrait": "Wonder Woman 1984 2020.jpg",
-        "landscape": "Wonder Woman 1984 2020.jpg",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
@@ -26,8 +24,6 @@
         "title": "Crakk",
         "year": "2024",
         "language": "Hindi",
-        "portrait": "Crakk 2024.jpg",
-        "landscape": "Crakk 2024.jpg",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
@@ -38,8 +34,6 @@
         "title": "Transformers",
         "year": "2007",
         "language": "English",
-        "portrait": "Transformers 2007.jpg",
-        "landscape": "Transformers 2007.jpg",
         "genre": [""],
         "description": [""],
         "terabox_link": "",
@@ -245,8 +239,6 @@
         "portrait": "Ek Tha Tiger 2012.jpg",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
@@ -254,11 +246,7 @@
         "title": "Thor Ragnarok",
         "year": "2017",
         "language": "English",
-        "portrait": "Thor Ragnarok 2017.jpg",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
+        "genre": ["Action", "Sci-fi"],
         "cast": ["Chris Hemsworth", "Tom Hiddleston"]
     },
     {
@@ -266,12 +254,8 @@
         "title": "12th Fail",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "12th Fail 2023.jpg",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": ["Vikrant Massey"]
+        "genre": ["Drama"],
+        "cast": ["Vikrant Massey", "Medha Shankar"]
     },
     {
         "id": "24",
@@ -574,16 +558,12 @@
         "cast": [""]
     },
     {
-        "id": "",
+        "id": "49",
         "title": "K. G. F. Chapter 2",
         "year": "2022",
-        "language": "",
-        "portrait": "K. G. F. Chapter 2 2022.jpg",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "language": "Kannada",
+        "genre": ["Action", "Thriller"],
+        "cast": ["Yash", "Srinidi Shetty", "Raveena Tandon", "Sanjay Dutt", "Archana Jois", "Garuda Ram"]
     },
     {
         "id": "",
@@ -742,27 +722,21 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Sonic the hedgehog",
+        "id": "63",
+        "title": "Sonic the Hedgehog",
         "year": "2020",
-        "language": "",
-        "portrait": "Sonic the Hedgehog 2020.jpg",
-        "landscape": "",
+        "language": "English",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "cast": ["Jim Carrey","Ben Schwartz","James Marsden","Tika Sumpter"]
     },
     {
         "id": "64",
-        "title": "Chennai express",
+        "title": "Chennai Express",
         "year": "2013",
         "language": "",
         "portrait": "Chennai Express 2013.jpg",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Shah Rukh Khan", "Deepika Padukone"]
     },
     {
@@ -773,8 +747,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -4631,8 +4603,6 @@
         "year": "",
         "language": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -4641,29 +4611,23 @@
         "year": "",
         "language": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
         "id": "390",
         "title": "Sonic the Hedgehog 3",
         "year": "2024",
-        "language": "",
+        "language": "English",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "cast": ["Jim Carrey","Ben Schwartz","Idris Elba","James Marsden","Tika Sumpter"]
     },
     {
         "id": "391",
         "title": "Mazhai Pidikatha Manithan",
         "year": "2024",
-        "language": "",
+        "language": "Tamil",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "cast": ["Vijay Antony","Megha Akash","Dhananjay"]
     },
     {
         "id": "392",
@@ -4671,8 +4635,6 @@
         "year": "2024",
         "language": "Malayalam",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Unni Mukundan","Yukti Thareja"]
     }
 ]
