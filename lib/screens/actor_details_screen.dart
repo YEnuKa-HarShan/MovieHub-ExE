@@ -15,6 +15,7 @@ class ActorDetailsScreen extends StatefulWidget {
 
 class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
   List<Movie> movies = [];
+  Map<String, String> movieImageMap = {};
 
   @override
   void initState() {
@@ -24,10 +25,22 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
 
   Future<void> _loadMovies() async {
     try {
-      final String response = await rootBundle.loadString('assets/movies.json');
-      final List<dynamic> data = json.decode(response);
+      // Load movies.json
+      final String moviesResponse = await rootBundle.loadString('assets/movies.json');
+      final List<dynamic> moviesData = json.decode(moviesResponse);
+
+      // Load movie_images.json
+      final String imagesResponse = await rootBundle.loadString('assets/items/movie_images.json');
+      final List<dynamic> imagesData = json.decode(imagesResponse);
+
+      // Create a map of title to portrait image
+      movieImageMap = {
+        for (var item in imagesData)
+          if (item['title']?.isNotEmpty ?? false) item['title'].toString(): item['portrait'].toString()
+      };
+
       setState(() {
-        movies = data.map((json) => Movie.fromJson(json)).toList();
+        movies = moviesData.map((json) => Movie.fromJson(json)).toList();
       });
     } catch (e) {
       if (mounted) {
@@ -223,7 +236,7 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
                         delegate: SliverChildBuilderDelegate(
                           (context, index) {
                             final movie = actorMovies[index];
-                            return _MovieItem(movie: movie);
+                            return _MovieItem(movie: movie, movieImageMap: movieImageMap);
                           },
                           childCount: actorMovies.length,
                         ),
@@ -240,8 +253,9 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
 // Widget for each movie item with hover effect
 class _MovieItem extends StatefulWidget {
   final Movie movie;
+  final Map<String, String> movieImageMap;
 
-  const _MovieItem({required this.movie});
+  const _MovieItem({required this.movie, required this.movieImageMap});
 
   @override
   _MovieItemState createState() => _MovieItemState();
@@ -252,6 +266,9 @@ class _MovieItemState extends State<_MovieItem> {
 
   @override
   Widget build(BuildContext context) {
+    // Get portrait image from movieImageMap, fallback to movie.portrait
+    final portraitImage = widget.movieImageMap[widget.movie.title] ?? widget.movie.portrait;
+
     return GestureDetector(
       onTap: () {
         Navigator.push(
@@ -278,7 +295,7 @@ class _MovieItemState extends State<_MovieItem> {
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
-                'assets/portrait/${widget.movie.portrait}',
+                'assets/portrait/$portraitImage',
                 fit: BoxFit.cover,
                 width: double.infinity,
                 height: double.infinity, // Take full height of the grid item
