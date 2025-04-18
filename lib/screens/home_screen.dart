@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final TextEditingController _searchController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   String searchQuery = '';
+  Map<String, String> movieImageMap = {}; // Map to store title-to-portrait mappings
 
   @override
   void initState() {
@@ -36,10 +37,21 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Future<void> _loadMovies() async {
     try {
-      final String response = await DefaultAssetBundle.of(context).loadString('assets/movies.json');
-      final List<dynamic> data = json.decode(response);
+      // Load movies.json
+      final String moviesResponse = await DefaultAssetBundle.of(context).loadString('assets/movies.json');
+      final List<dynamic> moviesData = json.decode(moviesResponse);
+
+      // Load movie_images.json
+      final String imagesResponse = await DefaultAssetBundle.of(context).loadString('assets/items/movie_images.json');
+      final List<dynamic> imagesData = json.decode(imagesResponse);
+
+      // Create a map of title to portrait image
+      movieImageMap = {
+        for (var item in imagesData) item['title'].toString(): item['portrait'].toString()
+      };
+
       setState(() {
-        movies = data.map((json) => Movie.fromJson(json)).toList().reversed.toList();
+        movies = moviesData.map((json) => Movie.fromJson(json)).toList().reversed.toList();
         _filterMovies(''); // Initial filter to apply portrait check
       });
     } catch (e) {
@@ -61,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           .where((movie) =>
               movie.title.toLowerCase().contains(query.toLowerCase()) &&
               (selectedLanguage.isEmpty || movie.language == selectedLanguage) &&
-              movie.portrait.isNotEmpty)
+              (movieImageMap[movie.title]?.isNotEmpty ?? false))
           .toList();
     });
   }
@@ -400,7 +412,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                           itemCount: filteredMovies.length,
                           itemBuilder: (context, index) {
                             final movie = filteredMovies[index];
-                            return MovieCard(movie: movie, searchQuery: searchQuery);
+                            return MovieCard(
+                              movie: movie,
+                              searchQuery: searchQuery,
+                              movieImageMap: movieImageMap, // Pass the image map
+                            );
                           },
                         ),
             ),
@@ -473,8 +489,14 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 class MovieCard extends StatefulWidget {
   final Movie movie;
   final String searchQuery;
+  final Map<String, String> movieImageMap; // Add image map
 
-  const MovieCard({super.key, required this.movie, required this.searchQuery});
+  const MovieCard({
+    super.key,
+    required this.movie,
+    required this.searchQuery,
+    required this.movieImageMap,
+  });
 
   @override
   State<MovieCard> createState() => _MovieCardState();
@@ -545,6 +567,9 @@ class _MovieCardState extends State<MovieCard> with SingleTickerProviderStateMix
   }
 
   Widget _buildFront() {
+    // Get portrait image from movieImageMap, fallback to movie.portrait
+    final portraitImage = widget.movieImageMap[widget.movie.title] ?? widget.movie.portrait;
+
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
@@ -560,9 +585,9 @@ class _MovieCardState extends State<MovieCard> with SingleTickerProviderStateMix
         borderRadius: BorderRadius.circular(10),
         child: Stack(
           children: [
-            widget.movie.portrait.isNotEmpty
+            portraitImage.isNotEmpty
                 ? Image.asset(
-                    'assets/portrait/${widget.movie.portrait}',
+                    'assets/portrait/$portraitImage',
                     fit: BoxFit.cover,
                     width: double.infinity,
                     height: double.infinity,
