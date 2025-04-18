@@ -20,6 +20,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
   Map<String, String> movieImageMap = {};
   Map<String, List<String>> movieDescriptionMap = {};
   Map<String, Map<String, String>> teraboxLinkMap = {};
+  Map<String, List<Map<String, String>>> actorRolesMap = {};
 
   @override
   void initState() {
@@ -30,10 +31,27 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
 
   Future<void> _loadActors() async {
     try {
-      final String response = await rootBundle.loadString('assets/actors.json');
-      final List<dynamic> data = json.decode(response);
+      // Load actors.json
+      final String actorsResponse = await rootBundle.loadString('assets/actors.json');
+      final List<dynamic> actorsData = json.decode(actorsResponse);
+
+      // Load actor_roles.json
+      final String rolesResponse = await rootBundle.loadString('assets/items/actor_roles.json');
+      final List<dynamic> rolesData = json.decode(rolesResponse);
+
+      // Create a map of actor name to roles
+      actorRolesMap = {
+        for (var item in rolesData)
+          if (item['actor_name']?.isNotEmpty ?? false)
+            item['actor_name'].toString(): List<Map<String, String>>.from(
+                (item['roles'] ?? []).map((role) => {
+                      'movie_id': role['movie_id'].toString(),
+                      'character': role['character'].toString(),
+                    }))
+      };
+
       setState(() {
-        actors = data.map((json) => Actor.fromJson(json)).toList();
+        actors = actorsData.map((json) => Actor.fromJson(json)).toList();
         _prepareCastDisplay();
       });
     } catch (e) {
@@ -90,13 +108,16 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
     castDisplay = actors
         .where((actor) => widget.movie.cast.contains(actor.name))
         .map((actor) {
-      final role = actor.roles.firstWhere(
-        (r) => r.movieId == widget.movie.id,
-        orElse: () => Role(movieId: widget.movie.id, character: 'Unknown Character'),
+      // Get roles for this actor from actorRolesMap
+      final actorRoles = actorRolesMap[actor.name] ?? [];
+      // Find the role for the current movie
+      final role = actorRoles.firstWhere(
+        (r) => r['movie_id'] == widget.movie.id,
+        orElse: () => {'movie_id': widget.movie.id, 'character': 'Unknown Character'},
       );
       return CastDisplay(
         actorName: actor.name,
-        characterName: role.character,
+        characterName: role['character']!,
         image: actor.image,
       );
     }).toList();

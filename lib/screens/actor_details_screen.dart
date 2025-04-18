@@ -16,6 +16,7 @@ class ActorDetailsScreen extends StatefulWidget {
 class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
   List<Movie> movies = [];
   Map<String, String> movieImageMap = {};
+  Map<String, List<Map<String, String>>> actorRolesMap = {};
 
   @override
   void initState() {
@@ -33,10 +34,25 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
       final String imagesResponse = await rootBundle.loadString('assets/items/movie_images.json');
       final List<dynamic> imagesData = json.decode(imagesResponse);
 
+      // Load actor_roles.json
+      final String rolesResponse = await rootBundle.loadString('assets/items/actor_roles.json');
+      final List<dynamic> rolesData = json.decode(rolesResponse);
+
       // Create a map of title to portrait image
       movieImageMap = {
         for (var item in imagesData)
           if (item['title']?.isNotEmpty ?? false) item['title'].toString(): item['portrait'].toString()
+      };
+
+      // Create a map of actor name to roles
+      actorRolesMap = {
+        for (var item in rolesData)
+          if (item['actor_name']?.isNotEmpty ?? false)
+            item['actor_name'].toString(): List<Map<String, String>>.from(
+                (item['roles'] ?? []).map((role) => {
+                      'movie_id': role['movie_id'].toString(),
+                      'character': role['character'].toString(),
+                    }))
       };
 
       setState(() {
@@ -199,9 +215,11 @@ class _ActorDetailsScreenState extends State<ActorDetailsScreen> {
                 ? const SliverToBoxAdapter(child: Center(child: CircularProgressIndicator()))
                 : Builder(
                     builder: (context) {
-                      final actorMovies = movies
-                          .where((movie) => movie.cast.contains(widget.actor.name))
-                          .toList();
+                      // Get movie IDs for the actor from actorRolesMap
+                      final actorRoles = actorRolesMap[widget.actor.name] ?? [];
+                      final actorMovieIds = actorRoles.map((role) => role['movie_id']).toSet();
+
+                      final actorMovies = movies.where((movie) => actorMovieIds.contains(movie.id)).toList();
 
                       if (actorMovies.isEmpty) {
                         return SliverToBoxAdapter(

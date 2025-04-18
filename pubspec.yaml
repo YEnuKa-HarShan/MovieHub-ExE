@@ -49,6 +49,7 @@ flutter:
     - assets/items/movie_images.json
     - assets/items/movie_descriptions.json
     - assets/items/terabox_links.json
+    - assets/items/actor_roles.json
     - assets/Icon.png
   # To add assets to your application, add an assets section, like this:
   # assets:
