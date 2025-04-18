@@ -180,62 +180,95 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      TextButton(
-                        onPressed: () {
-                          setState(() {
-                            _selectedIndex = 0; // Switch to Home
-                          });
-                        },
-                        child: Text(
-                          'Home',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 16,
-                            color: _selectedIndex == 0 ? Colors.white : Colors.white.withOpacity(0.7),
-                            fontWeight: FontWeight.w500,
-                            decoration: _selectedIndex == 0 ? TextDecoration.underline : TextDecoration.none,
-                            decorationColor: Colors.white,
-                            decorationThickness: 2,
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          TextButton(
+                            onPressed: () {
+                              setState(() {
+                                _selectedIndex = 0; // Switch to Home
+                              });
+                            },
+                            child: Text(
+                              'Home',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 16,
+                                color: _selectedIndex == 0 ? Colors.white : Colors.white.withOpacity(0.7),
+                                fontWeight: _selectedIndex == 0 ? FontWeight.w700 : FontWeight.w500,
+                              ),
+                            ),
                           ),
-                        ),
+                          AnimatedContainer(
+                            duration: const Duration(milliseconds: 300),
+                            height: 2,
+                            width: _selectedIndex == 0 ? 40 : 0,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(1),
+                            ),
+                          ),
+                        ],
                       ),
-                      TextButton(
-                        onPressed: () {
-                          setState(() {
-                            _selectedIndex = 1; // Switch to Movies
-                          });
-                        },
-                        child: Text(
-                          'Movies',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 16,
-                            color: _selectedIndex == 1 ? Colors.white : Colors.white.withOpacity(0.7),
-                            fontWeight: FontWeight.w500,
-                            decoration: _selectedIndex == 1 ? TextDecoration.underline : TextDecoration.none,
-                            decorationColor: Colors.white,
-                            decorationThickness: 2,
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          TextButton(
+                            onPressed: () {
+                              setState(() {
+                                _selectedIndex = 1; // Switch to Movies
+                              });
+                            },
+                            child: Text(
+                              'Movies',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 16,
+                                color: _selectedIndex == 1 ? Colors.white : Colors.white.withOpacity(0.7),
+                                fontWeight: _selectedIndex == 1 ? FontWeight.w700 : FontWeight.w500,
+                              ),
+                            ),
                           ),
-                        ),
+                          AnimatedContainer(
+                            duration: const Duration(milliseconds: 300),
+                            height: 2,
+                            width: _selectedIndex == 1 ? 40 : 0,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(1),
+                            ),
+                          ),
+                        ],
                       ),
-                      TextButton(
-                        onPressed: () {
-                          setState(() {
-                            _selectedIndex = 2; // Switch to TV Series
-                          });
-                        },
-                        child: Text(
-                          'TV Series',
-                          style: TextStyle(
-                            fontFamily: 'Poppins',
-                            fontSize: 16,
-                            color: _selectedIndex == 2 ? Colors.white : Colors.white.withOpacity(0.7),
-                            fontWeight: FontWeight.w500,
-                            decoration: _selectedIndex == 2 ? TextDecoration.underline : TextDecoration.none,
-                            decorationColor: Colors.white,
-                            decorationThickness: 2,
+                      Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          TextButton(
+                            onPressed: () {
+                              setState(() {
+                                _selectedIndex = 2; // Switch to TV Series
+                              });
+                            },
+                            child: Text(
+                              'TV Series',
+                              style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontSize: 16,
+                                color: _selectedIndex == 2 ? Colors.white : Colors.white.withOpacity(0.7),
+                                fontWeight: _selectedIndex == 2 ? FontWeight.w700 : FontWeight.w500,
+                              ),
+                            ),
                           ),
-                        ),
+                          AnimatedContainer(
+                            duration: const Duration(milliseconds: 300),
+                            height: 2,
+                            width: _selectedIndex == 2 ? 40 : 0,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(1),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
