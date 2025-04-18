@@ -6,7 +6,7 @@
         ]
     },
     {
-        "actor_name": "Yukthi Thareja",
+        "actor_name": "Yukti Thareja",
         "roles": [
             {"movie_id": "392", "character": "Maria"}
         ]
@@ -19,6 +19,68 @@
             {"movie_id": "17", "character": ""},
             {"movie_id": "86", "character": ""},
             {"movie_id": "64", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "Deepika Padukone",
+        "roles": [
+            {"movie_id": "10", "character": "Minni"},
+            {"movie_id": "16", "character": ""},
+            {"movie_id": "17", "character": ""},
+            {"movie_id": "64", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "Shia LaBeouf",
+        "roles": [
+            {"movie_id": "4", "character": "Sam Witwicky"},
+            {"movie_id": "5", "character": "Sam Witwicky"},
+            {"movie_id": "6", "character": "Sam Witwicky"}
+        ]
+    },
+    {
+        "actor_name": "Akshay Kumar",
+        "roles": [
+            {"movie_id": "85", "character": ""},
+            {"movie_id": "58", "character": ""},
+            {"movie_id": "87", "character": "Jagdish Mishra"}
+        ]
+    },
+    {
+        "actor_name": "Anil Kapoor",
+        "roles": [
+            {"movie_id": "1", "character": "Balbir Singh"},
+            {"movie_id": "10", "character": "Rockey"}
+        ]
+    },
+    {
+        "actor_name": "Hrithik Roshan",
+        "roles": [
+            {"movie_id": "10", "character": "Patty"}
+        ]
+    },
+    {
+        "actor_name": "Ranbir Kapoor",
+        "roles": [
+            {"movie_id": "1", "character": "Ranvijay Singh"}
+        ]
+    },
+    {
+        "actor_name": "Tripti Dimri",
+        "roles": [
+            {"movie_id": "1", "character": "Zoya Riaz"}
+        ]
+    },
+    {
+        "actor_name": "Nayanthara",
+        "roles": [
+            {"movie_id": "16", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "",
+        "roles": [
+            {"movie_id": "", "character": ""}
         ]
     },
     {
