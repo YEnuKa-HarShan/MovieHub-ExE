@@ -17,11 +17,15 @@ class MovieDetailsScreen extends StatefulWidget {
 class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
   List<Actor> actors = [];
   List<CastDisplay> castDisplay = [];
+  Map<String, String> movieImageMap = {};
+  Map<String, List<String>> movieDescriptionMap = {};
+  Map<String, Map<String, String>> teraboxLinkMap = {};
 
   @override
   void initState() {
     super.initState();
     _loadActors();
+    _loadMovieData();
   }
 
   Future<void> _loadActors() async {
@@ -36,6 +40,47 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading actors: $e')),
+        );
+      }
+    }
+  }
+
+  Future<void> _loadMovieData() async {
+    try {
+      // Load movie_images.json
+      final String imagesResponse = await rootBundle.loadString('assets/items/movie_images.json');
+      final List<dynamic> imagesData = json.decode(imagesResponse);
+      movieImageMap = {
+        for (var item in imagesData)
+          if (item['title']?.isNotEmpty ?? false) item['title'].toString(): item['landscape'].toString()
+      };
+
+      // Load movie_descriptions.json
+      final String descriptionsResponse = await rootBundle.loadString('assets/items/movie_descriptions.json');
+      final List<dynamic> descriptionsData = json.decode(descriptionsResponse);
+      movieDescriptionMap = {
+        for (var item in descriptionsData)
+          if (item['title']?.isNotEmpty ?? false)
+            item['title'].toString(): List<String>.from(item['description'] ?? [])
+      };
+
+      // Load terabox_links.json
+      final String teraboxResponse = await rootBundle.loadString('assets/items/terabox_links.json');
+      final List<dynamic> teraboxData = json.decode(teraboxResponse);
+      teraboxLinkMap = {
+        for (var item in teraboxData)
+          if (item['title']?.isNotEmpty ?? false)
+            item['title'].toString(): {
+              'link': item['link']?.toString() ?? '',
+              'access_code': item['access_code']?.toString() ?? ''
+            }
+      };
+
+      setState(() {});
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading movie data: $e')),
         );
       }
     }
@@ -57,8 +102,12 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
     }).toList();
   }
 
-  void _handleDownload(BuildContext context) async {
-    if (widget.movie.teraboxLink == null || widget.movie.teraboxLink!.toLowerCase() == "coming soon") {
+  void _handleDownload(BuildContext context) {
+    final teraboxData = teraboxLinkMap[widget.movie.title] ?? {'link': '', 'access_code': ''};
+    final link = teraboxData['link'] ?? '';
+    final accessCode = teraboxData['access_code'] ?? '';
+
+    if (link.isEmpty || link.toLowerCase() == "coming soon") {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -97,22 +146,79 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
         ),
       );
     } else {
-      final Uri url = Uri.parse(widget.movie.teraboxLink!);
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url, mode: LaunchMode.externalApplication);
-      } else {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(
-                'Could not launch the link',
-                style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
-              ),
-              backgroundColor: Color(0xFF00203F),
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: const Color(0xFF0A1A2F),
+          title: const Text(
+            'Access Code',
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 20,
             ),
-          );
-        }
-      }
+          ),
+          content: Text(
+            '${widget.movie.title} ${widget.movie.year}.rar access code is $accessCode.',
+            style: const TextStyle(
+              fontFamily: 'Poppins',
+              color: Colors.white70,
+              fontSize: 16,
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text(
+                'Cancel',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  color: Color(0xFF00A8E8),
+                  fontSize: 14,
+                ),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                Navigator.pop(context);
+                final Uri url = Uri.parse(link);
+                if (await canLaunchUrl(url)) {
+                  await launchUrl(url, mode: LaunchMode.externalApplication);
+                } else {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          'Could not launch the link',
+                          style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
+                        ),
+                        backgroundColor: Color(0xFF00203F),
+                      ),
+                    );
+                  }
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF00A8E8),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              child: const Text(
+                'Download Now',
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  color: Colors.white,
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      );
     }
   }
 
@@ -148,6 +254,13 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // Get landscape image and description from maps, with fallback
+    final landscapeImage = movieImageMap[widget.movie.title] ?? widget.movie.landscape;
+    final descriptionList = movieDescriptionMap[widget.movie.title] ?? widget.movie.description;
+    final descriptionText = descriptionList.isNotEmpty
+        ? descriptionList.join('\n\n')
+        : 'Description coming soon';
+
     return Scaffold(
       backgroundColor: const Color(0xFF0A1A2F),
       body: CustomScrollView(
@@ -171,8 +284,18 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                 fit: StackFit.expand,
                 children: [
                   Image.asset(
-                    'assets/landscape/${widget.movie.landscape}',
+                    'assets/landscape/$landscapeImage',
                     fit: BoxFit.cover,
+                    errorBuilder: (context, error, stackTrace) => Container(
+                      color: Colors.grey.shade800,
+                      child: const Center(
+                        child: Icon(
+                          Icons.broken_image,
+                          color: Colors.white70,
+                          size: 50,
+                        ),
+                      ),
+                    ),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -261,13 +384,7 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                         color: Colors.white.withOpacity(0.8),
                         fontSize: 16,
                       ),
-                      children: widget.movie.description.isEmpty
-                          ? [
-                              const TextSpan(
-                                text: 'Description coming soon',
-                              ),
-                            ]
-                          : _parseDescription(widget.movie.getDescriptionAsString()),
+                      children: _parseDescription(descriptionText),
                     ),
                   ),
                   const SizedBox(height: 24),
