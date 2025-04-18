@@ -2,32 +2,17 @@
     {
         "id": "1",
         "actor_name": "Unni Mukundan",
-        "actor_image": "Unni Mukundan.jpg",
-        "roles": [
-            {"movie_id": "392", "character": "Marco"}
-        ]
+        "actor_image": "Unni Mukundan.jpg"
     },
     {
         "id": "2",
         "actor_name": "Yukti Thareja",
-        "actor_image": "Yukti Thareja.jpg",
-        "roles": [
-            {"movie_id": "392", "character": "Maria"}
-        ]
+        "actor_image": "Yukti Thareja.jpg"
     },
     {
         "id": "3",
         "actor_name": "Shah Rukh Khan",
-        "actor_image": "Shah Rukh Khan.jpg",
-        "roles": [
-            {"movie_id": "9", "character": "Hardayal"},
-            {"movie_id": "16", "character": ""},
-            {"movie_id": "17", "character": ""},
-            {"movie_id": "86", "character": ""},
-            {"movie_id": "64", "character": ""},
-            {"movie_id": "", "character": ""},
-            {"movie_id": "", "character": ""}
-        ]
+        "actor_image": "Shah Rukh Khan.jpg"
     },
     {
         "id": "4",

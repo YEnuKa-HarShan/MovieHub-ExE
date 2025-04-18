@@ -4,5 +4,45 @@
         "roles": [
             {"movie_id": "392", "character": "Marco"}
         ]
+    },
+    {
+        "actor_name": "Yukthi Thareja",
+        "roles": [
+            {"movie_id": "392", "character": "Maria"}
+        ]
+    },
+    {
+        "actor_name": "Shah Rukh Khan",
+        "roles": [
+            {"movie_id": "9", "character": "Hardayal"},
+            {"movie_id": "16", "character": ""},
+            {"movie_id": "17", "character": ""},
+            {"movie_id": "86", "character": ""},
+            {"movie_id": "64", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
+    },
+    {
+        "actor_name": "",
+        "roles": [
+            {"movie_id": "", "character": ""}
+        ]
     }
 ]
