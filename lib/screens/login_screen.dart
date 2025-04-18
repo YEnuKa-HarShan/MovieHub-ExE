@@ -75,14 +75,23 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
         return;
       }
 
-      // Store only isLoggedIn in SharedPreferences
+      // Check user role
+      final role = user['role']?.toString();
+
+      // Store isLoggedIn in SharedPreferences
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
 
       if (!mounted) return;
 
-      // Navigate to HomeScreen
-      Navigator.pushReplacementNamed(context, '/home');
+      // Navigate based on role
+      if (role == 'Admin') {
+        Navigator.pushReplacementNamed(context, '/admin');
+      } else if (role == 'User') {
+        Navigator.pushReplacementNamed(context, '/home');
+      } else {
+        _showSnackBar('Unknown role: $role');
+      }
     } catch (e) {
       _showSnackBar('Error: $e');
     }
