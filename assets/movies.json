@@ -44,8 +44,6 @@
         "title": "Transformers Revenge of the Fallen",
         "year": "2009",
         "language": "English",
-        "portrait": "Transformers 2009.jpg",
-        "landscape": "Transformers 2009.jpg",
         "genre": [""],
         "cast": ["Shia LaBeouf"]
     },
@@ -54,8 +52,6 @@
         "title": "San Andreas",
         "year": "2015",
         "language": "English",
-        "portrait": "San Andreas 2015.jpg",
-        "landscape": "San Andreas 2015.jpg",
         "genre": [""],
         "cast": ["Dwayne Johnson"]
     },
@@ -64,8 +60,6 @@
         "title": "Bawaal",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Bawaal 2023.jpg",
-        "landscape": "Bawaal 2023.jpg",
         "genre": [""],
         "cast": ["Janhvi Kapoor", "Varun Dhawan"]
     },
@@ -74,8 +68,6 @@
         "title": "Dunki",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Dunki 2023.jpg",
-        "landscape": "Dunki 2023.jpg",
         "genre": [""],
         "cast": ["Shah Rukh Khan"]
     },
@@ -84,8 +76,6 @@
         "title": "Fighter",
         "year": "2024",
         "language": "Hindi",
-        "portrait": "Fighter 2024.jpg",
-        "landscape": "Fighter 2024.jpg",
         "genre": [""],
         "cast": ["Deepika Padukone","Hrithik Roshan", "Anil Kapoor"]
     },
@@ -94,8 +84,6 @@
         "title": "Bholaa",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Bholaa 2023.jpg",
-        "landscape": "Bholaa 2023.jpg",
         "genre": [""],
         "cast": ["Ajay Devgn", "Tabu"]
     },
@@ -104,11 +92,7 @@
         "title": "Raid",
         "year": "2018",
         "language": "Hindi",
-        "portrait": "Raid 2018.jpg",
-        "landscape": "Raid 2018.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Ajay Devgn", "Ileana D'Cruz"]
     },
     {
@@ -116,11 +100,7 @@
         "title": "Big Hero 6",
         "year": "2014",
         "language": "English",
-        "portrait": "Big Hero 6 2014.jpg",
-        "landscape": "Big Hero 6 2014.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -128,11 +108,7 @@
         "title": "Black Adam",
         "year": "2022",
         "language": "English",
-        "portrait": "Black Adam 2022.jpg",
-        "landscape": "Black Adam 2022.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -140,11 +116,7 @@
         "title": "Bridge to Terabithia",
         "year": "2007",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -325,8 +297,6 @@
         "portrait": "Sonic the Hedgehog 2 2022.jpg",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -334,11 +304,7 @@
         "title": "Race 3",
         "year": "2018",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -349,8 +315,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -361,8 +325,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -373,8 +335,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -385,8 +345,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -737,8 +695,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -749,8 +705,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -761,8 +715,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -773,8 +725,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
