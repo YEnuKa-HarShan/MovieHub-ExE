@@ -44,7 +44,7 @@
         "title": "Transformers Revenge of the Fallen",
         "year": "2009",
         "language": "English",
-        "genre": [""],
+        "genre": ["Action", "Adventure", "Sci-Fi"],
         "cast": ["Shia LaBeouf"]
     },
     {
@@ -52,7 +52,7 @@
         "title": "San Andreas",
         "year": "2015",
         "language": "English",
-        "genre": [""],
+        "genre": ["Action", "Adventure", "Thriller"],
         "cast": ["Dwayne Johnson"]
     },
     {
@@ -60,7 +60,7 @@
         "title": "Bawaal",
         "year": "2023",
         "language": "Hindi",
-        "genre": [""],
+        "genre": ["Comedy", "Drama", "Romance"],
         "cast": ["Janhvi Kapoor", "Varun Dhawan"]
     },
     {
@@ -68,7 +68,7 @@
         "title": "Dunki",
         "year": "2023",
         "language": "Hindi",
-        "genre": [""],
+        "genre": ["Adventure", "Drama"],
         "cast": ["Shah Rukh Khan"]
     },
     {
@@ -124,11 +124,7 @@
         "title": "Jawan",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Jawan 2023.jpg",
-        "landscape": "Jawan 2023.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi", "Deepika Padukone"]
     },
     {
@@ -136,11 +132,7 @@
         "title": "Pathaan",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Pathaan 2023.jpg",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Shah Rukh Khan", "Deepika Padukone", "John Abraham"]
     },
     {
@@ -148,11 +140,7 @@
         "title": "Tiger 3",
         "year": "2023",
         "language": "Hindi",
-        "portrait": "Tiger 3 2023.jpg",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Salman Khan", "Katrina Kaif", "Emraan Hashmi"]
     },
     {
@@ -160,11 +148,7 @@
         "title": "Transformers Age of Extinction",
         "year": "2014",
         "language": "English",
-        "portrait": "Transformers 2014.jpg",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -210,11 +194,7 @@
         "title": "Bhool Bhulaiyaa 2",
         "year": "2022",
         "language": "Hindi",
-        "portrait": "Bhool Bhulaiyaa 2 2022.jpg",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Kartik Aaryan"]
     },
     {
@@ -338,7 +318,7 @@
         "cast": [""]
     },
     {
-        "id": "",
+        "id": "36",
         "title": "Theeran Adhigaaram Ondru",
         "year": "2017",
         "language": "",
@@ -348,8 +328,8 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "777 charlie",
+        "id": "37",
+        "title": "777 Charlie",
         "year": "2022",
         "language": "",
         "portrait": "",
@@ -360,7 +340,7 @@
         "cast": [""]
     },
     {
-        "id": "",
+        "id": "38",
         "title": "Hotel Transylvania",
         "year": "2012",
         "language": "",
@@ -372,9 +352,75 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": " Pacific rim 2013",
-        "year": "",
+        "id": "39",
+        "title": " Pacific Rim",
+        "year": "2013",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "description": [""],
+        "terabox_link": "",
+        "cast": [""]
+    },
+    {
+        "id": "40",
+        "title": "Bloody Daddy",
+        "year": "2023",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "description": [""],
+        "terabox_link": "",
+        "cast": [""]
+    },
+    {
+        "id": "41",
+        "title": "Brahmastra Part 1 Shiva",
+        "year": "2022",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "cast": [""]
+    },
+    {
+        "id": "42",
+        "title": "Dhadak",
+        "year": "2018",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "cast": [""]
+    },
+    {
+        "id": "43",
+        "title": "Mission Raniganj",
+        "year": "2023",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "cast": [""]
+    },
+    {
+        "id": "44",
+        "title": "Sathya Prem Ki Katha",
+        "year": "2023",
+        "language": "",
+        "portrait": "",
+        "landscape": "",
+        "genre": [""],
+        "description": [""],
+        "terabox_link": "",
+        "cast": [""]
+    },
+    {
+        "id": "45",
+        "title": "Singh is Bliing",
+        "year": "2015",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -385,86 +431,10 @@
     },
     {
         "id": "",
-        "title": "Bloody daddy 2023",
-        "year": "",
+        "title": "Pranaya Vilasam",
+        "year": "2023",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Brahmastra part 1 shiva 2022",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Dhadak 2018",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Mission raniganj 2023",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Sathya prem ki katha 2023",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Singh is bliing 2015",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Pranaya vilasam 2023",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -493,8 +463,8 @@
     },
     {
         "id": "",
-        "title": "Anjaan 2014",
-        "year": "",
+        "title": "Anjaan",
+        "year": "2014",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -505,8 +475,8 @@
     },
     {
         "id": "",
-        "title": "Captain miller 2024",
-        "year": "",
+        "title": "Captain Miller 2024",
+        "year": "2024",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -517,8 +487,8 @@
     },
     {
         "id": "",
-        "title": "Siren 2024",
-        "year": "",
+        "title": "Siren",
+        "year": "2024",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -529,8 +499,8 @@
     },
     {
         "id": "",
-        "title": "Baahubali 2 The Conclusion 2017",
-        "year": "",
+        "title": "Baahubali 2 The Conclusion",
+        "year": "2017",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -541,8 +511,8 @@
     },
     {
         "id": "",
-        "title": "Bhool Bhulaiyaa 2007",
-        "year": "",
+        "title": "Bhool Bhulaiyaa",
+        "year": "2007",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -553,8 +523,8 @@
     },
     {
         "id": "",
-        "title": "Ek villain 2014",
-        "year": "",
+        "title": "Ek villain",
+        "year": "2014",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -565,8 +535,8 @@
     },
     {
         "id": "",
-        "title": "Holiday 2014",
-        "year": "",
+        "title": "Holiday",
+        "year": "2014",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -577,8 +547,8 @@
     },
     {
         "id": "",
-        "title": "Ram setu 2022",
-        "year": "",
+        "title": "Ram Setu",
+        "year": "2022",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -589,7 +559,7 @@
     },
     {
         "id": "58",
-        "title": "Rowdy rathore 2012",
+        "title": "Rowdy Rathore",
         "year": "2012",
         "language": "",
         "portrait": "",
@@ -601,8 +571,8 @@
     },
     {
         "id": "",
-        "title": "Fear street part 1 1994 2021",
-        "year": "",
+        "title": "Fear Street Part 1 1994",
+        "year": "2021",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -613,8 +583,8 @@
     },
     {
         "id": "",
-        "title": "Fear street part 3 1966 2021",
-        "year": "",
+        "title": "Fear Street Part 3 1966",
+        "year": "2021",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -625,8 +595,8 @@
     },
     {
         "id": "",
-        "title": "Fear street part 2 1978 2021",
-        "year": "",
+        "title": "Fear Street Part 2 1978",
+        "year": "2021",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -637,8 +607,8 @@
     },
     {
         "id": "",
-        "title": "Dune part 1 2021",
-        "year": "",
+        "title": "Dune Part 1",
+        "year": "2021",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -659,7 +629,7 @@
         "id": "64",
         "title": "Chennai Express",
         "year": "2013",
-        "language": "",
+        "language": "Hindi",
         "portrait": "Chennai Express 2013.jpg",
         "landscape": "",
         "genre": [""],
@@ -667,8 +637,8 @@
     },
     {
         "id": "",
-        "title": "Kung fu panda 2008",
-        "year": "",
+        "title": "Kung Fu Panda",
+        "year": "2008",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -677,8 +647,8 @@
     },
     {
         "id": "",
-        "title": "13 hours the secret soldiers of benghazi 2016",
-        "year": "",
+        "title": "13 Hours The Secret Soldiers of Benghazi",
+        "year": "2016",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -689,8 +659,16 @@
     },
     {
         "id": "",
-        "title": "Lamborghini the man behind the legend 2022",
-        "year": "",
+        "title": "Lamborghini The Man Behind The Legend",
+        "year": "2022",
+        "language": "",
+        "genre": [""],
+        "cast": [""]
+    },
+    {
+        "id": "",
+        "title": "Bangalore Days",
+        "year": "2014",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -699,8 +677,16 @@
     },
     {
         "id": "",
-        "title": "Bangalore days 2014",
-        "year": "",
+        "title": "Ohm Shanthi Oshaana",
+        "year": "2014",
+        "language": "",
+        "genre": [""],
+        "cast": [""]
+    },
+    {
+        "id": "",
+        "title": "Heropanti 2",
+        "year": "2022",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -709,28 +695,8 @@
     },
     {
         "id": "",
-        "title": "Ohm shanthi oshaana 2014",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Heropanti 2 2022",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Garam masala 2005",
-        "year": "",
+        "title": "Garam Masala",
+        "year": "2005",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -741,8 +707,8 @@
     },
     {
         "id": "",
-        "title": "Mersal 2017",
-        "year": "",
+        "title": "Mersal",
+        "year": "2017",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -753,14 +719,12 @@
     },
     {
         "id": "",
-        "title": "Vikram 2022",
-        "year": "",
+        "title": "Vikram",
+        "year": "2022",
         "language": "",
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {

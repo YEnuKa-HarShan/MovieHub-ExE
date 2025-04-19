@@ -3,5 +3,855 @@
         "title": "Animal",
         "portrait": "Animal 2023.jpg",
         "landscape": "Animal 2023.jpeg"
+    },
+    {
+        "title": "Wonder Woman 1984",
+        "portrait": "Wonder Woman 1984 2020.jpg",
+        "landscape": "Wonder Woman 1984 2020.jpg"
+    },
+    {
+        "title": "Crakk",
+        "portrait": "Crakk 2024.jpg",
+        "landscape": "Crakk 2024.jpg"
+    },
+    {
+        "title": "Transformers",
+        "portrait": "Transformers 2007.jpg",
+        "landscape": "Transformers 2007.jpg"
+    },
+    {
+        "title": "Transformers Dark of the Moon",
+        "portrait": "Transformers 2011.jpg",
+        "landscape": "Transformers 2011.jpg"
+    },
+    {
+        "title": "Transformers Revenge of the Fallen",
+        "portrait": "Transformers 2009.jpg",
+        "landscape": "Transformers 2009.jpg"
+    },
+    {
+        "title": "San Andreas",
+        "portrait": "San Andreas 2015.jpg",
+        "landscape": "San Andreas 2015.jpg"
+    },
+    {
+        "title": "Bawaal",
+        "portrait": "Bawaal 2023.jpg",
+        "landscape": "Bawaal 2023.jpg"
+    },
+    {
+        "title": "Dunki",
+        "portrait": "Dunki 2023.jpg",
+        "landscape": "Dunki 2023.jpg"
+    },
+    {
+        "title": "Fighter",
+        "portrait": "Fighter 2024.jpg",
+        "landscape": "Fighter 2024.jpg"
+    },
+    {
+        "title": "Bholaa",
+        "portrait": "Bholaa 2023.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Raid",
+        "portrait": "Raid 2018.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Big Hero 6",
+        "portrait": "Big Hero 6 2014.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Black Adam",
+        "portrait": "Black Adam 2022.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Bridge to Terabithia",
+        "portrait": "Bridge to Terabithia 2007.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Jawan",
+        "portrait": "Jawan 2023.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Pathaan",
+        "portrait": "Pathaan 2023.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Tiger 3",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "Transformers Age of Extinction",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "Tiger Zinda Hai",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "Ek Tha Tiger",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "Thor Ragnarok",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "12th Fail",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "Bhool Bhulaiyaa 2",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
+    },
+    {
+        "title": "",
+        "portrait": "",
+        "landscape": ""
     }
 ]
