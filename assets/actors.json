@@ -37,10 +37,7 @@
     {
         "id": "8",
         "actor_name": "Rashmika Mandanna",
-        "actor_image": "Rashmika Mandanna.jpg",
-        "roles": [
-            {"movie_id": "1", "character": "Geetanjali"}
-        ]
+        "actor_image": "Rashmika Mandanna.jpg"
     },
     {
         "id": "9",
