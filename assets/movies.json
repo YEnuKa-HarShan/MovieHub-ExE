@@ -1,66 +1,34 @@
 [
     {
-        "id": "1",
-        "title": "Animal",
-        "year": "2023",
-        "language": "Hindi",
-        "genre": ["Action", "Crime", "Thriller"],
+        "id": "1", "title": "Animal", "year": "2023", "language": "Hindi", "genre": ["Action", "Crime", "Thriller"],
         "cast": ["Ranbir Kapoor", "Rashmika Mandanna", "Anil Kapoor", "Tripti Dimri", "Bobby Deol"]
     },
     {
-        "id": "2",
-        "title": "Wonder Woman 1984",
-        "year": "2020",
-        "language": "English",
-        "genre": ["Action", "Adventure", "Fantasy"],
+        "id": "2", "title": "Wonder Woman 1984", "year": "2020", "language": "English", "genre": ["Action", "Adventure", "Fantasy"],
         "cast": ["Gal Gadot", "Chris Pine", "Kristen Wiig", "Pedro Pascal", "Robin Wright"]
     },
     {
-        "id": "3",
-        "title": "Crakk",
-        "year": "2024",
-        "language": "Hindi",
-        "genre": ["Action", "Sport", "Thriller"],
+        "id": "3", "title": "Crakk", "year": "2024", "language": "Hindi", "genre": ["Action", "Sport", "Thriller"],
         "cast": ["Vidyut Jammwal", "Arjun Rampal", "Nora Fatehi", "Amy Jakson"]
     },
     {
-        "id": "4",
-        "title": "Transformers",
-        "year": "2007",
-        "language": "English",
-        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "id": "4", "title": "Transformers", "year": "2007", "language": "English", "genre": ["Action", "Adventure", "Sci-Fi"],
         "cast": ["Shia LaBeouf", "Megan Fox"]
     },
     {
-        "id": "5",
-        "title": "Transformers Dark of the Moon",
-        "year": "2011",
-        "language": "English",
-        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "id": "5", "title": "Transformers Dark of the Moon", "year": "2011", "language": "English", "genre": ["Action", "Adventure", "Sci-Fi"],
         "cast": ["Shia LaBeouf"]
     },
     {
-        "id": "6",
-        "title": "Transformers Revenge of the Fallen",
-        "year": "2009",
-        "language": "English",
-        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "id": "6", "title": "Transformers Revenge of the Fallen", "year": "2009", "language": "English", "genre": ["Action", "Adventure", "Sci-Fi"],
         "cast": ["Shia LaBeouf"]
     },
     {
-        "id": "7",
-        "title": "San Andreas",
-        "year": "2015",
-        "language": "English",
-        "genre": ["Action", "Adventure", "Thriller"],
+        "id": "7", "title": "San Andreas", "year": "2015", "language": "English", "genre": ["Action", "Adventure", "Thriller"],
         "cast": ["Dwayne Johnson"]
     },
     {
-        "id": "8",
-        "title": "Bawaal",
-        "year": "2023",
-        "language": "Hindi",
-        "genre": ["Comedy", "Drama", "Romance"],
+        "id": "8", "title": "Bawaal", "year": "2023", "language": "Hindi", "genre": ["Comedy", "Drama", "Romance"],
         "cast": ["Janhvi Kapoor", "Varun Dhawan"]
     },
     {
@@ -115,7 +83,7 @@
         "id": "15",
         "title": "Bridge to Terabithia",
         "year": "2007",
-        "language": "",
+        "language": "English",
         "genre": [""],
         "cast": [""]
     },
@@ -241,8 +209,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -250,11 +216,7 @@
         "title": "Blade Runner 2049",
         "year": "2017",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -262,11 +224,7 @@
         "title": "The Meg",
         "year": "2018",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -292,8 +250,6 @@
         "title": "Mission Chapter 1",
         "year": "2024",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
         "cast": [""]
     },
@@ -302,8 +258,6 @@
         "title": "Bodyguard",
         "year": "2011",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
         "cast": [""]
     },
@@ -311,9 +265,7 @@
         "id": "35",
         "title": "Beast",
         "year": "2022",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
+        "language": "Tamil",
         "genre": [""],
         "cast": [""]
     },
@@ -322,8 +274,6 @@
         "title": "Theeran Adhigaaram Ondru",
         "year": "2017",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
         "cast": [""]
     },
@@ -331,12 +281,8 @@
         "id": "37",
         "title": "777 Charlie",
         "year": "2022",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
+        "language": "Kannada",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -344,11 +290,7 @@
         "title": "Hotel Transylvania",
         "year": "2012",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -356,11 +298,7 @@
         "title": " Pacific Rim",
         "year": "2013",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
@@ -371,8 +309,6 @@
         "portrait": "",
         "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
