@@ -4,9 +4,7 @@
         "title": "Animal",
         "year": "2023",
         "language": "Hindi",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "coming soon",
+        "genre": ["Action", "Crime", "Thriller"],
         "cast": ["Ranbir Kapoor", "Rashmika Mandanna", "Anil Kapoor", "Tripti Dimri", "Bobby Deol"]
     },
     {
@@ -14,41 +12,31 @@
         "title": "Wonder Woman 1984",
         "year": "2020",
         "language": "English",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": ["Gal Gadot"]
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "cast": ["Gal Gadot", "Chris Pine", "Kristen Wiig", "Pedro Pascal", "Robin Wright"]
     },
     {
         "id": "3",
         "title": "Crakk",
         "year": "2024",
         "language": "Hindi",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": ["Vidyut Jammwal"]
+        "genre": ["Action", "Sport", "Thriller"],
+        "cast": ["Vidyut Jammwal", "Arjun Rampal", "Nora Fatehi", "Amy Jakson"]
     },
     {
         "id": "4",
         "title": "Transformers",
         "year": "2007",
         "language": "English",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": ["Shia LaBeouf"]
+        "genre": ["Action", "Adventure", "Sci-Fi"],
+        "cast": ["Shia LaBeouf", "Megan Fox"]
     },
     {
         "id": "5",
         "title": "Transformers Dark of the Moon",
         "year": "2011",
         "language": "English",
-        "portrait": "Transformers 2011.jpg",
-        "landscape": "Transformers 2011.jpg",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
+        "genre": ["Action", "Adventure", "Sci-Fi"],
         "cast": ["Shia LaBeouf"]
     },
     {
@@ -59,8 +47,6 @@
         "portrait": "Transformers 2009.jpg",
         "landscape": "Transformers 2009.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Shia LaBeouf"]
     },
     {
@@ -71,9 +57,7 @@
         "portrait": "San Andreas 2015.jpg",
         "landscape": "San Andreas 2015.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "cast": ["Dwayne Johnson"]
     },
     {
         "id": "8",
@@ -83,8 +67,6 @@
         "portrait": "Bawaal 2023.jpg",
         "landscape": "Bawaal 2023.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Janhvi Kapoor", "Varun Dhawan"]
     },
     {
@@ -95,8 +77,6 @@
         "portrait": "Dunki 2023.jpg",
         "landscape": "Dunki 2023.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Shah Rukh Khan"]
     },
     {
@@ -107,8 +87,6 @@
         "portrait": "Fighter 2024.jpg",
         "landscape": "Fighter 2024.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Deepika Padukone","Hrithik Roshan", "Anil Kapoor"]
     },
     {
@@ -119,8 +97,6 @@
         "portrait": "Bholaa 2023.jpg",
         "landscape": "Bholaa 2023.jpg",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": ["Ajay Devgn", "Tabu"]
     },
     {
@@ -221,7 +197,7 @@
     },
     {
         "id": "20",
-        "title": "Tiger zinda hai",
+        "title": "Tiger Zinda Hai",
         "year": "2017",
         "language": "Hindi",
         "portrait": "Tiger Zinda Hai 2017.jpg",
@@ -403,8 +379,8 @@
     },
     {
         "id": "",
-        "title": "Theeran Adhigaaram ondru 2017",
-        "year": "",
+        "title": "Theeran Adhigaaram Ondru",
+        "year": "2017",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -415,8 +391,8 @@
     },
     {
         "id": "",
-        "title": "777 charlie 2022",
-        "year": "",
+        "title": "777 charlie",
+        "year": "2022",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -427,8 +403,8 @@
     },
     {
         "id": "",
-        "title": "Hotel transylvania 2012",
-        "year": "",
+        "title": "Hotel Transylvania",
+        "year": "2012",
         "language": "",
         "portrait": "",
         "landscape": "",
@@ -535,26 +511,18 @@
     },
     {
         "id": "",
-        "title": "King of kotha 2024",
-        "year": "",
+        "title": "King Of Kotha",
+        "year": "2023",
         "language": "",
-        "portrait": "",
-        "landscape": "",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Aavesham 2024",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
+        "id": "48",
+        "title": "Aavesham",
+        "year": "2024",
+        "language": "Malayalam",
         "genre": [""],
-        "description": [""],
-        "terabox_link": "",
         "cast": [""]
     },
     {
