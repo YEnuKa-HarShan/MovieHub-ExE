@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moviehub_exe/pages/maintenance_page.dart'; // Adjust the import path based on your project structure
+import 'package:moviehub_exe/widgets/maintenance_widget.dart'; // Adjust the import path based on your project structure
 
 class AdministratorScreen extends StatelessWidget {
   const AdministratorScreen({super.key});
