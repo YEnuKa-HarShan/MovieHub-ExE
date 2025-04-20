@@ -5,6 +5,7 @@ import 'package:window_manager/window_manager.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/administrator_screen.dart';
+import 'dart:convert';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -70,9 +71,6 @@ class AuthCheck extends StatefulWidget {
 }
 
 class _AuthCheckState extends State<AuthCheck> {
-  bool _isLoggedIn = false;
-  bool _isLoading = true;
-
   @override
   void initState() {
     super.initState();
@@ -82,19 +80,43 @@ class _AuthCheckState extends State<AuthCheck> {
   Future<void> _checkLoginStatus() async {
     final prefs = await SharedPreferences.getInstance();
     final isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
-    setState(() {
-      _isLoggedIn = isLoggedIn;
-      _isLoading = false;
-    });
+
+    if (isLoggedIn) {
+      final userDataString = prefs.getString('userData');
+      if (userDataString != null) {
+        try {
+          final userData = json.decode(userDataString);
+          final role = userData['role'];
+
+          if (!mounted) return;
+
+          // Navigate based on role
+          if (role == 'Admin') {
+            Navigator.pushReplacementNamed(context, '/admin');
+          } else if (role == 'User') {
+            Navigator.pushReplacementNamed(context, '/home');
+          } else {
+            // Invalid role, go to login
+            Navigator.pushReplacementNamed(context, '/login');
+          }
+        } catch (e) {
+          // Invalid userData, go to login
+          Navigator.pushReplacementNamed(context, '/login');
+        }
+      } else {
+        // No user data, go to login
+        Navigator.pushReplacementNamed(context, '/login');
+      }
+    } else {
+      // Not logged in, go to login
+      Navigator.pushReplacementNamed(context, '/login');
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
-      );
-    }
-    return _isLoggedIn ? const HomeScreen() : const LoginScreen();
+    return const Scaffold(
+      body: Center(child: CircularProgressIndicator()),
+    );
   }
 }

@@ -75,22 +75,25 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
         return;
       }
 
-      // Check user role
-      final role = user['role']?.toString();
-
-      // Store isLoggedIn in SharedPreferences
+      // Store user data in SharedPreferences
       final prefs = await SharedPreferences.getInstance();
       await prefs.setBool('isLoggedIn', true);
+      await prefs.setString('userData', json.encode({
+        'email': user['email'],
+        'password': user['password'],
+        'username': user['username'],
+        'role': user['role'],
+      }));
 
       if (!mounted) return;
 
       // Navigate based on role
-      if (role == 'Admin') {
+      if (user['role'] == 'Admin') {
         Navigator.pushReplacementNamed(context, '/admin');
-      } else if (role == 'User') {
+      } else if (user['role'] == 'User') {
         Navigator.pushReplacementNamed(context, '/home');
       } else {
-        _showSnackBar('Unknown role: $role');
+        _showSnackBar('Unknown role: ${user['role']}');
       }
     } catch (e) {
       _showSnackBar('Error: $e');
@@ -144,14 +147,14 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                       const Text(
                         'Login',
                         style: TextStyle(
-                          fontSize: 40, // Increased font size
+                          fontSize: 40,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
                       ),
                       const SizedBox(height: 40),
                       SizedBox(
-                        width: 300, // Reduced width for email TextField
+                        width: 300,
                         child: TextField(
                           controller: _emailController,
                           style: const TextStyle(color: Colors.white),
@@ -170,7 +173,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                       ),
                       const SizedBox(height: 20),
                       SizedBox(
-                        width: 300, // Reduced width for password TextField
+                        width: 300,
                         child: TextField(
                           controller: _passwordController,
                           obscureText: _obscureText,
