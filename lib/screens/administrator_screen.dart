@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:moviehub_exe/screens/administrator/movies_data.dart';
-import 'package:moviehub_exe/screens/administrator/actors_data.dart';
-import 'package:moviehub_exe/screens/administrator/cast_checker.dart';
-import 'package:moviehub_exe/screens/administrator/users_data.dart';
-import 'package:moviehub_exe/screens/administrator/tv_series_data.dart';
+import 'package:moviehub_exe/pages/administrator/movies_data.dart';
+import 'package:moviehub_exe/pages/administrator/actors_data.dart';
+import 'package:moviehub_exe/pages/administrator/cast_checker.dart';
+import 'package:moviehub_exe/pages/administrator/users_data.dart';
+import 'package:moviehub_exe/pages/administrator/tv_series_data.dart';
 
 class AdministratorScreen extends StatefulWidget {
   const AdministratorScreen({super.key});
