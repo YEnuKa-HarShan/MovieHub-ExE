@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import '../../widgets/checker_tool_widget.dart';
+import 'package:moviehub_exe/widgets/checker_tool_widget.dart';
 
 class CastCheckerScreen extends StatefulWidget {
   const CastCheckerScreen({super.key});
@@ -33,29 +33,37 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    const leftColumnWidth = 600.0;
-    final rightColumnWidth = screenWidth > 900 ? screenWidth - leftColumnWidth : 300;
+    final screenWidth = MediaQuery.of(context).size.width - 250; // Account for 250px sidebar
+    const leftColumnWidth = 400.0;
+    final rightColumnWidth = screenWidth - leftColumnWidth;
 
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      body: Row(
+    return Container(
+      width: screenWidth,
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFF00203F), Color(0xFF004080)],
+        ),
+      ),
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Left Column: Movie List
           Container(
             width: leftColumnWidth,
-            color: Colors.white,
+            color: Colors.white.withOpacity(0.1),
             child: Column(
               children: [
                 Container(
                   padding: const EdgeInsets.all(16.0),
-                  color: Colors.blue[800],
+                  color: Colors.white.withOpacity(0.05),
                   child: const Row(
                     children: [
                       Text(
                         'Movies',
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -72,6 +80,7 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
                           itemBuilder: (context, index) {
                             final movie = movies[index];
                             return Card(
+                              color: Colors.white.withOpacity(0.1),
                               margin: const EdgeInsets.symmetric(
                                   vertical: 4.0, horizontal: 8.0),
                               elevation: 2,
@@ -80,15 +89,18 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
                                 title: Text(
                                   movie['title'],
                                   style: const TextStyle(
+                                    fontFamily: 'Poppins',
                                     fontSize: 18,
                                     fontWeight: FontWeight.w600,
+                                    color: Colors.white,
                                   ),
                                 ),
                                 subtitle: Text(
                                   'Year: ${movie['year']}\nCast: ${movie['cast'].join(', ')}',
-                                  style: TextStyle(
+                                  style: const TextStyle(
+                                    fontFamily: 'Poppins',
                                     fontSize: 14,
-                                    color: Colors.grey[600],
+                                    color: Colors.white70,
                                   ),
                                 ),
                                 onTap: () {
@@ -106,16 +118,17 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
           ),
           // Right Column: Checker Tool
           Container(
-            width: rightColumnWidth.toDouble(),
-            color: Colors.grey[100],
+            width: rightColumnWidth > 0 ? rightColumnWidth : 50, // Ensure non-negative width
+            color: Colors.transparent,
             child: selectedMovie != null
                 ? CheckerToolWidget(selectedMovie: selectedMovie!)
                 : const Center(
                     child: Text(
                       'Select a movie to check cast',
                       style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 16,
-                        color: Colors.grey,
+                        color: Colors.white70,
                       ),
                     ),
                   ),
