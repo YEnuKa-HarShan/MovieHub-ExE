@@ -10,14 +10,25 @@ class CastCheckerScreen extends StatefulWidget {
   _CastCheckerScreenState createState() => _CastCheckerScreenState();
 }
 
-class _CastCheckerScreenState extends State<CastCheckerScreen> {
+class _CastCheckerScreenState extends State<CastCheckerScreen> with SingleTickerProviderStateMixin {
   List<dynamic> movies = [];
   Map<String, dynamic>? selectedMovie;
+  late AnimationController _animationController;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
     super.initState();
     _loadMovies();
+    // Initialize animation controller
+    _animationController = AnimationController(
+      duration: const Duration(milliseconds: 800),
+      vsync: this,
+    );
+    _scaleAnimation = Tween<double>(begin: 0.8, end: 1.0).animate(
+      CurvedAnimation(parent: _animationController, curve: Curves.easeInOut),
+    );
+    _animationController.forward();
   }
 
   Future<void> _loadMovies() async {
@@ -29,6 +40,12 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
         return cast != null && cast is List && cast.isNotEmpty && cast[0] != "";
       }).toList();
     });
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -106,6 +123,8 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
                                 onTap: () {
                                   setState(() {
                                     selectedMovie = movie;
+                                    _animationController.reset();
+                                    _animationController.forward();
                                   });
                                 },
                               ),
@@ -116,19 +135,60 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> {
               ],
             ),
           ),
-          // Right Column: Checker Tool
+          // Right Column: Checker Tool or Placeholder
           Container(
             width: rightColumnWidth > 0 ? rightColumnWidth : 50, // Ensure non-negative width
             color: Colors.transparent,
             child: selectedMovie != null
                 ? CheckerToolWidget(selectedMovie: selectedMovie!)
-                : const Center(
-                    child: Text(
-                      'Select a movie to check cast',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                        color: Colors.white70,
+                : Center(
+                    child: ScaleTransition(
+                      scale: _scaleAnimation,
+                      child: Container(
+                        constraints: const BoxConstraints(maxWidth: 200), // Constrain width for better fit
+                        child: Card(
+                          color: Colors.white.withOpacity(0.05), // Lower opacity for better background fit
+                          elevation: 4,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                const Icon(
+                                  Icons.movie_filter,
+                                  size: 50,
+                                  color: Colors.white70,
+                                ),
+                                const SizedBox(height: 12),
+                                const Text(
+                                  'Select a Movie',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                const Text(
+                                  'Choose a movie from the list to check its cast details',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 12,
+                                    color: Colors.white70,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
