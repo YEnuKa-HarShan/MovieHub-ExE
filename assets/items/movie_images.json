@@ -225,7 +225,9 @@
         "landscape": ""
     },
     {
-        "title": "Pranaya Vilasam"
+        "title": "Pranaya Vilasam",
+        "portrait": "Pranaya Vilasam 2023.jpg",
+        "landscape": ""
     },
     {
         "title": "King Of Kotha",
@@ -258,52 +260,25 @@
         "landscape": ""
     },
     {
-        "id": "",
         "title": "Baahubali 2 The Conclusion",
-        "year": "2017",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Baahubali 2 The Conclusion 2017.jpg",
+        "landscape": ""
     },
     {
-        "id": "",
         "title": "Bhool Bhulaiyaa",
-        "year": "2007",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Bhool Bhulaiyaa 2007.jpg",
+        "landscape": ""
     },
     {
-        "id": "",
-        "title": "Ek villain",
-        "year": "2014",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "Ek Villain",
+        "portrait": "Ek Villain 2014.jpg",
+        "landscape": ""
     },
     {
         "id": "",
         "title": "Holiday",
-        "year": "2014",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Holiday 2014.jpg",
+        "landscape": ""
     },
     {
         "title": "Ram Setu",
@@ -332,11 +307,13 @@
     },
     {
         "title": "Dune Part 1",
-        "portrait": "",
+        "portrait": "Dune Part 1 2021.jpg",
         "landscape": ""
     },
     {
-        "title": "Sonic the Hedgehog"
+        "title": "Sonic the Hedgehog",
+        "portrait": "Sonic the Hedgehog 2020.jpg",
+        "landscape": ""
     },
     {
         "title": "Chennai Express",
@@ -344,14 +321,9 @@
         "landscape": ""
     },
     {
-        "id": "",
         "title": "Kung Fu Panda",
-        "year": "2008",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "cast": [""]
+        "portrait": "Kung Fu Panda 2008.jpg",
+        "landscape": ""
     },
     {
         "id": "",
@@ -679,43 +651,21 @@
         "cast": [""]
     },
     {
-        "id": "",
         "title": "Final destination 2000",
-        "year": "",
-        "language": "",
         "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "landscape": ""
     },
     {
-        "id": "",
         "title": "Final destination 5 2011",
-        "year": "",
-        "language": "",
         "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "landscape": ""
     },
     {
-        "id": "",
         "title": "Final destination 2 2003",
-        "year": "",
-        "language": "",
         "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "landscape": ""
     },
     {
-        "id": "",
         "title": "Harry Potter and the Prisoner of Azkaban",
         "portrait": "Harry Potter 2004.jpg",
         "landscape": ""
