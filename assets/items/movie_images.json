@@ -176,54 +176,28 @@
     },
     {
         "title": "Theeran Adhigaaram Ondru",
-        "portrait": "",
+        "portrait": "Theeran Adhigaaram Ondru 2017.jpg",
         "landscape": ""
     },
     {
-        "id": "37",
         "title": "777 Charlie",
-        "year": "2022",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "cast": [""]
+        "portrait": "777 Charlie 2022.jpg",
+        "landscape": ""
     },
     {
-        "id": "38",
         "title": "Hotel Transylvania",
-        "year": "2012",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Hotel Transylvania 2012.jpg",
+        "landscape": ""
     },
     {
-        "id": "39",
-        "title": " Pacific Rim",
-        "year": "2013",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "Pacific Rim",
+        "portrait": "Pacific Rim 2013.jpg",
+        "landscape": ""
     },
     {
-        "id": "40",
         "title": "Bloody Daddy",
-        "year": "2023",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Bloody Daddy 2023.jpg",
+        "landscape": ""
     },
     {
         "id": "41",
