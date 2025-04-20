@@ -3,7 +3,8 @@
         "id": "1",
         "title": "Animal",
         "year": "2023",
-        "language": "Hindi"
+        "language": "Hindi",
+        "cast": ["Ranbir Kapoor"]
     },
     {
         "id": "2",
@@ -241,85 +242,85 @@
     },
     {
         "id": "41",
-        "title": "",
+        "title": "Brahmastra Part 1 Shiva",
         "year": "",
         "language": ""
     },
     {
         "id": "42",
-        "title": "",
+        "title": "Dhadak",
         "year": "",
         "language": ""
     },
     {
         "id": "43",
-        "title": "",
+        "title": "Mission Raniganj",
         "year": "",
         "language": ""
     },
     {
         "id": "44",
-        "title": "",
+        "title": "Sathya Prem Ki Katha",
         "year": "",
         "language": ""
     },
     {
         "id": "45",
-        "title": "",
+        "title": "Singh is Bliing",
         "year": "",
         "language": ""
     },
     {
         "id": "46",
-        "title": "",
+        "title": "Pranaya Vilasam",
         "year": "",
         "language": ""
     },
     {
         "id": "47",
-        "title": "",
+        "title": "King Of Kotha",
         "year": "",
         "language": ""
     },
     {
         "id": "48",
-        "title": "",
+        "title": "Aavesham",
         "year": "",
         "language": ""
     },
     {
         "id": "49",
-        "title": "",
+        "title": "K. G. F. Chapter 2",
         "year": "",
         "language": ""
     },
     {
         "id": "50",
-        "title": "",
+        "title": "Anjaan",
         "year": "",
         "language": ""
     },
     {
         "id": "51",
-        "title": "",
+        "title": "Captain Miller",
         "year": "",
         "language": ""
     },
     {
         "id": "52",
-        "title": "",
+        "title": "Siren",
         "year": "",
         "language": ""
     },
     {
         "id": "53",
-        "title": "",
+        "title": "Baahubali 2: The Conclusion",
         "year": "",
         "language": ""
     },
     {
         "id": "54",
-        "title": "",
+        "title": "Bhool Bhulaiyaa",
         "year": "",
         "language": ""
     },
@@ -344,6 +345,258 @@
     {
         "id": "58",
         "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "59",
+        "title": "Fear Street Part 1 1994",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "60",
+        "title": "Fear Street Part 3 1666",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "61",
+        "title": "Fear Street Part 2 1978",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "62",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "63",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "64",
+        "title": "Chennai Express",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "65",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "66",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "67",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "68",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "69",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "70",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "71",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "72",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "73",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "74",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "75",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "76",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "77",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "78",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "79",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "80",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "81",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "82",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "83",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "84",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "85",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "86",
+        "title": "Dilwale",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "87",
+        "title": "Jolly LLB 2",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "88",
+        "title": "Shehzada",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "89",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "90",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "91",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "92",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "93",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "94",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "95",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "96",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "97",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "98",
+        "title": "",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "99",
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "year": "",
+        "language": ""
+    },
+    {
+        "id": "100",
+        "title": "Harry Potter and the Sorcerer's Stone",
         "year": "",
         "language": ""
     }
