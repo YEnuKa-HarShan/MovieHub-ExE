@@ -30,7 +30,7 @@ class _AdministratorScreenState extends State<AdministratorScreen> with SingleTi
     {'title': 'Movies Data', 'icon': Icons.movie},
     {'title': 'Actors Data', 'icon': Icons.person},
     {'title': 'Cast Checker', 'icon': Icons.check_circle},
-    {'title': 'User Data', 'icon': Icons.people},
+    {'title': 'Users Data', 'icon': Icons.people},
     {'title': 'TV Series Data', 'icon': Icons.tv},
   ];
 
