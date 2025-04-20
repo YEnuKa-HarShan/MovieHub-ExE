@@ -4,7 +4,7 @@
         "title": "Animal",
         "year": "2023",
         "language": "Hindi",
-        "cast": ["Ranbir Kapoor"]
+        "cast": ["Ranbir Kapoor", "Anil Kapoor"]
     },
     {
         "id": "2",
@@ -52,7 +52,8 @@
         "id": "9",
         "title": "Dunki",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shah Rukh Khan"]
     },
     {
         "id": "10",
@@ -94,7 +95,8 @@
         "id": "16",
         "title": "Jawan",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shah Rukh Khan", "Nayanthara"]
     },
     {
         "id": "17",

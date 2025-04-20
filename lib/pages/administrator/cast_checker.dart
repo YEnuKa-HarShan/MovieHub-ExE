@@ -51,7 +51,7 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> with SingleTicker
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width - 250; // Account for 250px sidebar
-    const leftColumnWidth = 400.0;
+    const leftColumnWidth = 380.0;
     final rightColumnWidth = screenWidth - leftColumnWidth;
 
     return Container(
@@ -140,7 +140,9 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> with SingleTicker
             width: rightColumnWidth > 0 ? rightColumnWidth : 50, // Ensure non-negative width
             color: Colors.transparent,
             child: selectedMovie != null
-                ? CheckerToolWidget(selectedMovie: selectedMovie!)
+                ? CheckerToolWidget(
+                    key: ValueKey(selectedMovie!['title']), // Ensure widget rebuilds
+                    selectedMovie: selectedMovie!)
                 : Center(
                     child: ScaleTransition(
                       scale: _scaleAnimation,
@@ -170,7 +172,7 @@ class _CastCheckerScreenState extends State<CastCheckerScreen> with SingleTicker
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
-                                    fontSize: 20,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   ),
