@@ -4,7 +4,7 @@
         "title": "Animal",
         "year": "2023",
         "language": "Hindi",
-        "cast": ["Ranbir Kapoor", "Anil Kapoor"]
+        "cast": ["Ranbir Kapoor", "Anil Kapoor", "Tripti Dimri"]
     },
     {
         "id": "2",
@@ -71,7 +71,8 @@
         "id": "12",
         "title": "Raid",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Ajay Devgn"]
     },
     {
         "id": "13",
@@ -96,19 +97,21 @@
         "title": "Jawan",
         "year": "",
         "language": "",
-        "cast": ["Shah Rukh Khan", "Nayanthara"]
+        "cast": ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"]
     },
     {
         "id": "17",
         "title": "Pathaan",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shah Rukh Khan", "Deepika Padukone"]
     },
     {
         "id": "18",
         "title": "Tiger 3",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "19",
@@ -120,25 +123,29 @@
         "id": "20",
         "title": "Tiger Zinda Hai",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "21",
         "title": "Ek Tha Tiger",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "22",
         "title": "Thor Ragnarok",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Chris Hemsworth"]
     },
     {
         "id": "23",
         "title": "12th Fail",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Vikrant Massey"]
     },
     {
         "id": "24",
@@ -192,7 +199,8 @@
         "id": "32",
         "title": "Race 3",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Salman Khan"]
     },
     {
         "id": "33",
@@ -204,13 +212,15 @@
         "id": "34",
         "title": "Bodyguard",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Salman Khan"]
     },
     {
         "id": "35",
         "title": "Beast",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Vijay", "Pooja Hegde"]
     },
     {
         "id": "36",
@@ -240,25 +250,29 @@
         "id": "40",
         "title": "Bloody Daddy",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shahid Kapoor"]
     },
     {
         "id": "41",
         "title": "Brahmastra Part 1 Shiva",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Ranbir Kapoor", "Alia Bhatt"]
     },
     {
         "id": "42",
         "title": "Dhadak",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Janhvi Kapoor"]
     },
     {
         "id": "43",
         "title": "Mission Raniganj",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Akshay Kumar"]
     },
     {
         "id": "44",
@@ -270,7 +284,8 @@
         "id": "45",
         "title": "Singh is Bliing",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Akshay Kumar"]
     },
     {
         "id": "46",
@@ -294,7 +309,8 @@
         "id": "49",
         "title": "K. G. F. Chapter 2",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Yash"]
     },
     {
         "id": "50",
@@ -306,7 +322,8 @@
         "id": "51",
         "title": "Captain Miller",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Dhanush"]
     },
     {
         "id": "52",
@@ -318,13 +335,15 @@
         "id": "53",
         "title": "Baahubali 2 The Conclusion",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Prabhas"]
     },
     {
         "id": "54",
         "title": "Bhool Bhulaiyaa",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Akshay Kumar"]
     },
     {
         "id": "55",
@@ -384,7 +403,8 @@
         "id": "64",
         "title": "Chennai Express",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shah Rukh Khan", "Deepika Padukone"]
     },
     {
         "id": "65",
@@ -516,7 +536,8 @@
         "id": "86",
         "title": "Dilwale",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Shah Rukh Khan", "Kajol"]
     },
     {
         "id": "87",
