@@ -4,74 +4,83 @@
         "title": "Animal",
         "year": "2023",
         "language": "Hindi",
-        "cast": ["Ranbir Kapoor", "Anil Kapoor", "Tripti Dimri"]
+        "cast": ["Ranbir Kapoor", "Anil Kapoor", "Tripti Dimri", "Rashmika Mandanna", "Bobby Deol"]
     },
     {
         "id": "2",
         "title": "Wonder Woman 1984",
         "year": "2020",
-        "language": "English"
+        "language": "English",
+        "cast": ["Gal Gadot", "Kristen Wiig", "Pedro Pascal", "Chris Pine"]
     },
     {
         "id": "3",
         "title": "Crakk",
         "year": "",
-        "language": ""
+        "language": "Hindi",
+        "cast": ["Vidyut Jammwal", "Arjun Rampal", "Nora Fatehi"]
     },
     {
         "id": "4",
         "title": "Transformers",
         "year": "",
-        "language": ""
+        "language": "English",
+        "cast": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel"]
     },
     {
         "id": "5",
         "title": "Transformers Dark of the Moon",
         "year": "",
-        "language": ""
+        "language": "English",
+        "cast": ["Shia LaBeouf", "Rosie Huntington-Whiteley", "Josh Duhamel"]
     },
     {
         "id": "6",
         "title": "Transformers Revenge of the Fallen",
         "year": "",
-        "language": ""
+        "language": "English",
+        "cast": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel"]
     },
     {
         "id": "7",
         "title": "San Andreas",
         "year": "",
-        "language": ""
+        "language": "English",
+        "cast": ["Dwayne Johnson", "Carla Gugino", "Alexandra Daddario"]
     },
     {
         "id": "8",
         "title": "Bawaal",
         "year": "",
-        "language": ""
+        "language": "Hindi",
+        "cast": ["Varun Dhawan", "Janhvi Kapoor"]
     },
     {
         "id": "9",
         "title": "Dunki",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Shah Rukh Khan"]
     },
     {
         "id": "10",
         "title": "Fighter",
         "year": "",
-        "language": ""
+        "language": "Hindi",
+        "cast": ["Hrithik Roshan", "Deepika Padukone", "Anil Kapoor"]
     },
     {
         "id": "11",
         "title": "Bholaa",
         "year": "",
-        "language": ""
+        "language": "Hindi",
+        "cast": ["Ajay Devgn", "Tabu"]
     },
     {
         "id": "12",
         "title": "Raid",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Ajay Devgn"]
     },
     {
@@ -84,7 +93,8 @@
         "id": "14",
         "title": "Black Adam",
         "year": "",
-        "language": ""
+        "language": "English",
+        "cast": ["Dwayne Johnson"]
     },
     {
         "id": "15",
@@ -96,55 +106,55 @@
         "id": "16",
         "title": "Jawan",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Shah Rukh Khan", "Nayanthara", "Vijay Sethupathi"]
     },
     {
         "id": "17",
         "title": "Pathaan",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Shah Rukh Khan", "Deepika Padukone"]
     },
     {
         "id": "18",
         "title": "Tiger 3",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "19",
         "title": "Transformers Age of Extinction",
         "year": "",
-        "language": ""
+        "language": "English"
     },
     {
         "id": "20",
         "title": "Tiger Zinda Hai",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "21",
         "title": "Ek Tha Tiger",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Salman Khan", "Katrina Kaif"]
     },
     {
         "id": "22",
         "title": "Thor Ragnarok",
         "year": "",
-        "language": "",
+        "language": "English",
         "cast": ["Chris Hemsworth"]
     },
     {
         "id": "23",
         "title": "12th Fail",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Vikrant Massey"]
     },
     {
@@ -199,7 +209,7 @@
         "id": "32",
         "title": "Race 3",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Salman Khan"]
     },
     {
@@ -212,7 +222,7 @@
         "id": "34",
         "title": "Bodyguard",
         "year": "",
-        "language": "",
+        "language": "Hindi",
         "cast": ["Salman Khan"]
     },
     {
@@ -559,19 +569,19 @@
     },
     {
         "id": "90",
-        "title": "",
+        "title": "Hey Sinamika",
         "year": "",
         "language": ""
     },
     {
         "id": "91",
-        "title": "",
+        "title": "Jagame Thandiram",
         "year": "",
         "language": ""
     },
     {
         "id": "92",
-        "title": "",
+        "title": "My Name is Khan",
         "year": "",
         "language": ""
     },
@@ -583,31 +593,31 @@
     },
     {
         "id": "94",
-        "title": "",
+        "title": "Sapta Sagaradaache Ello - Side A",
         "year": "",
         "language": ""
     },
     {
         "id": "95",
-        "title": "",
+        "title": "Final Destination 3",
         "year": "",
         "language": ""
     },
     {
         "id": "96",
-        "title": "",
+        "title": "Final Destination",
         "year": "",
         "language": ""
     },
     {
         "id": "97",
-        "title": "",
+        "title": "Final Destination 5",
         "year": "",
         "language": ""
     },
     {
         "id": "98",
-        "title": "",
+        "title": "Final Destination 2",
         "year": "",
         "language": ""
     },

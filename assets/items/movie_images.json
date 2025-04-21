@@ -67,7 +67,7 @@
     {
         "title": "Black Adam",
         "portrait": "Black Adam 2022.jpg",
-        "landscape": ""
+        "landscape": "Black Adam 2022.png"
     },
     {
         "title": "Bridge to Terabithia",
@@ -237,7 +237,7 @@
     {
         "title": "Aavesham",
         "portrait": "Aavesham 2024.jpg",
-        "landscape": ""
+        "landscape": "Aavesham 2024.jpg"
     },
     {
         "title": "K. G. F. Chapter 2",
@@ -328,14 +328,8 @@
     {
         "id": "",
         "title": "13 Hours The Secret Soldiers of Benghazi",
-        "year": "2016",
-        "language": "",
         "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "landscape": ""
     },
     {
         "id": "",
@@ -356,34 +350,19 @@
         "cast": [""]
     },
     {
-        "id": "",
         "title": "Ohm Shanthi Oshaana",
-        "year": "2014",
-        "language": "",
-        "genre": [""],
-        "cast": [""]
+        "portrait": "Ohm Shanthi Oshaana 2014.jpg",
+        "landscape": "Ohm Shanthi Oshaana 2014.jpg"
     },
     {
-        "id": "",
         "title": "Heropanti 2",
-        "year": "2022",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "cast": [""]
+        "portrait": "Heropanti 2 2022.jpg",
+        "landscape": "Heropanti 2 2022.jpg"
     },
     {
-        "id": "",
         "title": "Garam Masala",
-        "year": "2005",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "portrait": "Garam Masala 2005.jpg",
+        "landscape": "Garam Masala 2005.jpg"
     },
     {
         "id": "",
@@ -540,16 +519,9 @@
         "cast": [""]
     },
     {
-        "id": "85",
         "title": "Boss",
-        "year": "2013",
-        "language": "",
         "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": ["Akshay Kumar"]
+        "landscape": ""
     },
     {
         "title": "Dilwale",
@@ -579,90 +551,48 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Hey sinamika 2022",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "Hey Sinamika",
+        "portrait": "Hey Sinamika 2022.jpg",
+        "landscape": "Hey Sinamika 2022.jpg"
     },
     {
-        "id": "",
-        "title": "Jagame thandiram 2021",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "Jagame Thandiram",
+        "portrait": "Jagame Thandiram 2021.jpg",
+        "landscape": "Jagame Thandiram 2021.jpg"
     },
     {
-        "id": "",
-        "title": "My name is khan 2010",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "My Name is Khan",
+        "portrait": "My Name is Khan 2010.jpg",
+        "landscape": "My Name is Khan 2010.jpg"
     },
     {
-        "id": "",
-        "title": "The game 2022",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Sapta sagaradaache ello - side a 2023",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "id": "",
-        "title": "Final destination 3 2006",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
-    },
-    {
-        "title": "Final destination 2000",
+        "title": "The Game 2022",
         "portrait": "",
         "landscape": ""
     },
     {
-        "title": "Final destination 5 2011",
-        "portrait": "",
+        "title": "Sapta Sagaradaache Ello - Side A",
+        "portrait": "Sapta Sagaradaache Ello - Side A 2023.jpg",
         "landscape": ""
     },
     {
-        "title": "Final destination 2 2003",
-        "portrait": "",
+        "title": "Final Destination 3",
+        "portrait": "Final Destination 3 2006.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Final Destination",
+        "portrait": "Final Destination 2000.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Final Destination 5",
+        "portrait": "Final Destination 5 2011.jpg",
+        "landscape": ""
+    },
+    {
+        "title": "Final Destination 2",
+        "portrait": "Final Destination 2 2003.jpg",
         "landscape": ""
     },
     {
