@@ -507,20 +507,13 @@
         "cast": [""]
     },
     {
-        "id": "",
-        "title": "Bhoot police 2021",
-        "year": "",
-        "language": "",
-        "portrait": "",
-        "landscape": "",
-        "genre": [""],
-        "description": [""],
-        "terabox_link": "",
-        "cast": [""]
+        "title": "Bhoot Police",
+        "portrait": "Bhoot Police 2021.jpg",
+        "landscape": ""
     },
     {
         "title": "Boss",
-        "portrait": "",
+        "portrait": "Boss 2013.jpg",
         "landscape": ""
     },
     {
@@ -556,9 +549,9 @@
         "landscape": "Hey Sinamika 2022.jpg"
     },
     {
-        "title": "Jagame Thandiram",
-        "portrait": "Jagame Thandiram 2021.jpg",
-        "landscape": "Jagame Thandiram 2021.jpg"
+        "title": "Jagame Thandhiram",
+        "portrait": "Jagame Thandhiram 2021.jpg",
+        "landscape": "Jagame Thandhiram 2021.jpg"
     },
     {
         "title": "My Name is Khan",
@@ -566,9 +559,9 @@
         "landscape": "My Name is Khan 2010.jpg"
     },
     {
-        "title": "The Game 2022",
-        "portrait": "",
-        "landscape": ""
+        "title": "The Game",
+        "portrait": "The Game 2022.jpg",
+        "landscape": "The Game 2022.jpg"
     },
     {
         "title": "Sapta Sagaradaache Ello - Side A",

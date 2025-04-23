@@ -155,13 +155,14 @@
         "title": "12th Fail",
         "year": "",
         "language": "Hindi",
-        "cast": ["Vikrant Massey"]
+        "cast": ["Vikrant Massey", "Medha Shankar"]
     },
     {
         "id": "24",
         "title": "Bhool Bhulaiyaa 2",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Kartik Aaryan", "Kiara Advani", "Tabu"]
     },
     {
         "id": "25",
@@ -179,7 +180,8 @@
         "id": "27",
         "title": "Kaithi",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Karthik Sivakumar"]
     },
     {
         "id": "28",
@@ -197,7 +199,8 @@
         "id": "30",
         "title": "The Meg",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Jason Statham"]
     },
     {
         "id": "31",
@@ -208,22 +211,23 @@
     {
         "id": "32",
         "title": "Race 3",
-        "year": "",
+        "year": "2018",
         "language": "Hindi",
-        "cast": ["Salman Khan"]
+        "cast": ["Salman Khan", "Anil Kapoor", "Jacqueline Fernandez", "Bobby Deol", "Daisy Shah"]
     },
     {
         "id": "33",
         "title": "Mission Chapter 1",
-        "year": "",
-        "language": ""
+        "year": "2024",
+        "language": "",
+        "cast": ["Arun Vijay", "Amy Jackson"]
     },
     {
         "id": "34",
         "title": "Bodyguard",
         "year": "",
         "language": "Hindi",
-        "cast": ["Salman Khan"]
+        "cast": ["Salman Khan", "Kareena Kapoor Khan"]
     },
     {
         "id": "35",
@@ -235,8 +239,9 @@
     {
         "id": "36",
         "title": "Theeran Adhigaaram Ondru",
-        "year": "",
-        "language": ""
+        "year": "2017",
+        "language": "",
+        "cast": ["Karthik Sivakumar", "Rakul Preet Singh"]
     },
     {
         "id": "37",
@@ -288,7 +293,8 @@
         "id": "44",
         "title": "Sathya Prem Ki Katha",
         "year": "",
-        "language": ""
+        "language": "",
+        "cast": ["Kartik Aaryan", "Kiara Advani"]
     },
     {
         "id": "45",
@@ -532,8 +538,8 @@
     },
     {
         "id": "84",
-        "title": "",
-        "year": "",
+        "title": "Bhoot Police",
+        "year": "2021",
         "language": ""
     },
     {
@@ -575,7 +581,7 @@
     },
     {
         "id": "91",
-        "title": "Jagame Thandiram",
+        "title": "Jagame Thandhiram",
         "year": "",
         "language": ""
     },
@@ -587,9 +593,9 @@
     },
     {
         "id": "93",
-        "title": "",
-        "year": "",
-        "language": ""
+        "title": "The Game",
+        "year": "2022",
+        "language": "Sinhala"
     },
     {
         "id": "94",
