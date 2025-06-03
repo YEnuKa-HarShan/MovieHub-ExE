@@ -324,9 +324,9 @@
     {
         "id": "49",
         "title": "K. G. F. Chapter 2",
-        "year": "",
-        "language": "",
-        "cast": ["Yash"]
+        "year": "2022",
+        "language": "Kannada",
+        "cast": ["Yash", "Srinidhi Shetty", "Raveena Tandon"]
     },
     {
         "id": "50",
@@ -364,43 +364,43 @@
     {
         "id": "55",
         "title": "Ek Villain",
-        "year": "",
+        "year": "2014",
         "language": ""
     },
     {
         "id": "56",
-        "title": "",
-        "year": "",
+        "title": "Holiday",
+        "year": "2014",
         "language": ""
     },
     {
         "id": "57",
-        "title": "",
-        "year": "",
+        "title": "Ram Setu",
+        "year": "2022",
         "language": ""
     },
     {
         "id": "58",
-        "title": "",
-        "year": "",
+        "title": "Rowdy Rathore",
+        "year": "2012",
         "language": ""
     },
     {
         "id": "59",
         "title": "Fear Street Part 1 1994",
-        "year": "",
+        "year": "2021",
         "language": ""
     },
     {
         "id": "60",
         "title": "Fear Street Part 3 1666",
-        "year": "",
+        "year": "2021",
         "language": ""
     },
     {
         "id": "61",
         "title": "Fear Street Part 2 1978",
-        "year": "",
+        "year": "2021",
         "language": ""
     },
     {
@@ -638,5 +638,414 @@
         "title": "Harry Potter and the Sorcerer's Stone",
         "year": "",
         "language": ""
+    },
+    {
+        "id": "101",
+        "title": "Harry Potter and the Chamber of Secrets"
+    },
+    {
+        "title": "Charlie"
+    },
+    {
+        "title": "Forensic"
+    },
+    {
+        "title": "Theevram"
+    },
+    {
+        "title": "Aarudhra"
+    },
+    {
+        "title": "Easwaran"
+    },
+    {
+        "title": "Mafia Chapter 1"
+    },
+    {
+        "title": "Pattathu Arasan"
+    },
+    {
+        "title": "Seethamma Vakitlo Sirimalle Chettu"
+    },
+    {
+        "title": "Cars"
+    },
+    {
+        "title": "Cars 2"
+    },
+    {
+        "title": "The Final Destination 4"
+    },
+    {
+        "title": "The Twilight Saga New Moon"
+    },
+    {
+        "title": "Naked Weapon"
+    },
+    {
+        "title": "Bhediya"
+    },
+    {
+        "title": "Bade Miyan Chote Miyan"
+    },
+    {
+        "title": "Housefull 3"
+    },
+    {
+        "title": "Housefull 2"
+    },
+    {
+        "title": "Jab Tak Hai Jaan"
+    },
+    {
+        "title": "Khuda Haafiz"
+    },
+    {
+        "title": "Khuda Haafiz Chapter 2"
+    },
+    {
+        "title": "Monsters of Man"
+    },
+    {
+        "title": "Salute"
+    },
+    {
+        "title": "Harry Potter and the Goblet of Fire"
+    },
+    {
+        "title": "Prey"
+    },
+    {
+        "title": "Home Alone 2"
+    },
+    {
+        "title": "Bermuda Tentacles"
+    },
+    {
+        "title": "Golmaal Returns"
+    },
+    {
+        "title": "Golmaal Fun Unlimited"
+    },
+    {
+        "title": "Kisi Ka Bhai Kisi Ki Jaan"
+    },
+    {
+        "title": "Operation Romeo"
+    },
+    {
+        "title": "Cars 3"
+    },
+    {
+        "title": "The Boss Baby Family Business"
+    },
+    {
+        "title": "Sapta Sagaradaache Ello - Side B"
+    },
+    {
+        "title": "Rebel"
+    },
+    {
+        "title": "Max Steel"
+    },
+    {
+        "title": "Extraction"
+    },
+    {
+        "title": "Dil Maange More"
+    },
+    {
+        "title": "Inception"
+    },
+    {
+        "title": "How to Train Your Dragon"
+    },
+    {
+        "title": "The Call of the Wild"
+    },
+    {
+        "title": "Triggered"
+    },
+    {
+        "title": "Taxi"
+    },
+    {
+        "title": "Taxi 2"
+    },
+    {
+        "title": "Interstellar"
+    },
+    {
+        "title": "Gumraah"
+    },
+    {
+        "title": "Ganapath"
+    },
+    {
+        "title": "Haseen Dillruba"
+    },
+    {
+        "title": "Taxi 3"
+    },
+    {
+        "title": "Taxi 4"
+    },
+    {
+        "title": "Enemy"
+    },
+    {
+        "title": "Rajini Murugan"
+    },
+    {
+        "title": "Soorarai Pottru"
+    },
+    {
+        "title": "Thiruchithrambalam"
+    },
+    {
+        "title": "White Rose"
+    },
+    {
+        "title": "Koi... Mil Gaya"
+    },
+    {
+        "title": "I Love You"
+    },
+    {
+        "title": "Krrish"
+    },
+    {
+        "title": "Ms. Dhoni the Untold Story"
+    },
+    {
+        "title": "Maidaan"
+    },
+    {
+        "title": "Malang"
+    },
+    {
+        "title": "Piku"
+    },
+    {
+        "title": "Sam Bahadur"
+    },
+    {
+        "title": "Shaandaar"
+    },
+    {
+        "title": "Shaitaan"
+    },
+    {
+        "title": "Teri Baaton Mein Aisa Uljha Jiya"
+    },
+    {
+        "title": "Tubelight"
+    },
+    {
+        "title": "Brave"
+    },
+    {
+        "title": "DC League of Super Pets"
+    },
+    {
+        "title": "Iron Man"
+    },
+    {
+        "title": "Harry Potter and the Order of the Pheonix"
+    },
+    {
+        "title": "Iron Man 2"
+    },
+    {
+        "title": "Harry Potter and the Half Blood Prince"
+    },
+    {
+        "title": "Captain America Civil War"
+    },
+    {
+        "title": "Ghostbusters Afterlife"
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows Part 1"
+    },
+    {
+        "title": "Iron Man 3"
+    },
+    {
+        "title": "Mile 22"
+    },
+    {
+        "title": "Morbius"
+    },
+    {
+        "title": "Viking"
+    },
+    {
+        "title": "The Karate Kid"
+    },
+    {
+        "title": "Junooniyat"
+    },
+    {
+        "title": "Dr. Nawariyan"
+    },
+    {
+        "title": "Ek Villain Returns"
+    },
+    {
+        "title": "Yodha"
+    },
+    {
+        "title": "Article 370"
+    },
+    {
+        "title": "Neram"
+    },
+    {
+        "title": "Trance"
+    },
+    {
+        "title": "Premalu"
+    },
+    {
+        "title": "Premam"
+    },
+    {
+        "title": "Rathnam"
+    },
+    {
+        "title": "Taxi 5"
+    },
+    {
+        "title": "John Wick Chapter 2"
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows Part 2"
+    },
+    {
+        "title": "Transformers The Last Knight"
+    },
+    {
+        "title": "The Garfield Movie"
+    },
+    {
+        "title": "Epic Tails"
+    },
+    {
+        "title": "Home"
+    },
+    {
+        "title": "Dasara"
+    },
+    {
+        "title": "Virupaksha"
+    },
+    {
+        "title": "Tantiram"
+    },
+    {
+        "title": "Rules Ranjann"
+    },
+    {
+        "title": "Ravanasura"
+    },
+    {
+        "title": "Spy"
+    },
+    {
+        "title": "Bro"
+    },
+    {
+        "title": "The Warriorr"
+    },
+    {
+        "title": "Bangarraju"
+    },
+    {
+        "title": "Godfather"
+    },
+    {
+        "title": "Ghani"
+    },
+    {
+        "title": "Dhamaka"
+    },
+    {
+        "title": "Acharya"
+    },
+    {
+        "title": "Sita Ramam"
+    },
+    {
+        "title": "Ranga Ranga Vaibhavanga"
+    },
+    {
+        "title": "Bimbisara"
+    },
+    {
+        "title": "Liger"
+    },
+    {
+        "title": "Radhe Shyam"
+    },
+    {
+        "title": "Shyam Singha Roy"
+    },
+    {
+        "title": "Krack"
+    },
+    {
+        "title": "Play Back"
+    },
+    {
+        "title": "Sridevi Soda Center"
+    },
+    {
+        "title": "V"
+    },
+    {
+        "title": "Solo Brathuke So Better"
+    },
+    {
+        "title": "47 Days"
+    },
+    {
+        "title": "Chaari 111"
+    },
+    {
+        "title": "Eagle"
+    },
+    {
+        "title": "Guntur Kaaram"
+    },
+    {
+        "title": "Das Ka Dhamki"
+    },
+    {
+        "title": "Prem Ratan Dhan Payo"
+    },
+    {
+        "title": "R.. Rajkumar"
+    },
+    {
+        "title": "Batti Gul Meter Chalo"
+    },
+    {
+        "title": "Karwaan"
+    },
+    {
+        "title": "Vantha Rajavathaan Varuven"
+    },
+    {
+        "title": "OK Kanmani"
+    },
+    {
+        "title": "Enna Solla Pogirai"
+    },
+    {
+        "title": "Kaththi"
+    },
+    {
+        "title": "Romeo"
     }
 ]
